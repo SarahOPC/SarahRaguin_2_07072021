@@ -7,22 +7,22 @@
 a.Economique /* lien non survolé */
 {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 a.Familial /* lien non survolé */
 {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 a.Romantique /* lien non survolé */
 {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 a.Animaux /* lien non survolé */
 {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 
 a.Economique:hover /* lien survolé */
@@ -50,29 +50,45 @@ a.Animaux:hover /* lien survolé */
    transition: 1s;
 }
 
-
-
-
 .footer
 {
     background-color: #F2F2F2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .checked {
-    color: blue;
+    color: #0065FC;
     }
 .unchecked
     {
-    color: rgb(179, 175, 175);
+    color: #F2F2F2;
     }
+
+.logoMenu
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    font-weight: bolder;
+
+}
+
+nav a
+{
+    margin-right: 4em;
+    text-decoration: none;
+}
+
+.hebergements a
+{
+    color:#0065FC;
+}
+
+.inscrire
+{
+    color: #0065FC;
+}
