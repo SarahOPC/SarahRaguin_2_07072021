@@ -1,3 +1,74 @@
+*
+{
+    font-size: 1,3em;
+    font-family: Raleway, Arial, Verdana, sans-serif;
+}
+
+a.Economique /* lien non survolé */
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a.Familial /* lien non survolé */
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a.Romantique /* lien non survolé */
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a.Animaux /* lien non survolé */
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a.Economique:hover /* lien survolé */
+{
+   text-decoration: underline;
+   color: #0065FC;
+   transition: 1s;
+}
+a.Familial:hover /* lien survolé */
+{
+   text-decoration: underline;
+   color: #0065FC;
+   transition: 1s;
+}
+a.Romantique:hover /* lien survolé */
+{
+   text-decoration: underline;
+   color: #0065FC;
+   transition: 1s;
+}
+a.Animaux:hover /* lien survolé */
+{
+   text-decoration: underline;
+   color: #0065FC;
+   transition: 1s;
+}
+
+
+
+
+.footer
+{
+    background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .checked {
     color: blue;
     }
