@@ -164,6 +164,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     text-decoration: none;
 }
 
+/*mise en forme des icones et boutons du filtre */
 .fa-money-bill-wave:before
 {
     padding: 0.6em;
@@ -208,4 +209,15 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 {
     display: flex;
     justify-content: space-evenly;
+}
+
+.fa-info-circle /*mise en forme de la partie information */
+{
+    font-size: larger;
+    margin-left: 0.5em;
+    border-radius: 1em;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    margin-right: 1em;
+    text-shadow: 0 0 0.1em black;
 }
