@@ -2,6 +2,7 @@
 {
     font-size: 1,3em;
     font-family: Raleway-Bold, Arial, Verdana, sans-serif;
+    background-color: #FFFFFF;
 }
 
 a.Economique /* lien non survolé */
@@ -59,7 +60,7 @@ a.Animaux:hover /* lien survolé */
 
 .footer
 {
-    background-color: #6d6d6d;
+    background-color: #f2f2f2;
 }
 
 .checked {
@@ -115,9 +116,10 @@ nav a
 
 .boutonmarker
 {
-    background-color: #6d6b6b;
+    background-color: #f2f2f2;
     color: #000000;
     padding: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 0.5em 0em 0em 0.5em;
 }
 
 .boutonville
@@ -125,9 +127,20 @@ nav a
     background-color: #f2f2f2;
 }
 
+input
+{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-color: transparent;
+}
+
 .boutonrechercher
 {
     background-color: #0065FC;
+    color: #FFFFFF;
+    border-radius: 0em 0.5em 0.5em 0em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+
 }
 
 p a
