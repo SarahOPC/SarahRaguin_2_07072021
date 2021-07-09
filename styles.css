@@ -10,6 +10,10 @@ a.Economique /* lien non survolé */
     text-decoration: none;
     color: #000000;
     transition: 2s ease-out;
+    padding: 0.7em 1.5em 0.7em 1.5em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    border: solid #f2f2f2;
+    margin-left: 1em;
 
 }
 a.Familial /* lien non survolé */
@@ -17,6 +21,10 @@ a.Familial /* lien non survolé */
     text-decoration: none;
     color: #000000;
     transition: 2s ease-out;
+    padding: 0.7em 1.5em 0.7em 1.5em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    border: solid #f2f2f2;
+    margin-left: 1em;
 
 }
 a.Romantique /* lien non survolé */
@@ -24,6 +32,10 @@ a.Romantique /* lien non survolé */
     text-decoration: none;
     color: #000000;
     transition: 2s ease-out;
+    padding: 0.7em 1.5em 0.7em 1.5em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    border: solid #f2f2f2;
+    margin-left: 1em;
 
 }
 a.Animaux /* lien non survolé */
@@ -31,6 +43,11 @@ a.Animaux /* lien non survolé */
     text-decoration: none;
     color: #000000;
     transition: 2s ease-out;
+    padding: 0.7em 1.5em 0.7em 1.5em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    border: solid #f2f2f2;
+    margin-left: 1em;
+
 }
 
 a.Economique:hover /* lien survolé */
@@ -63,35 +80,35 @@ a.Animaux:hover /* lien survolé */
     background-color: #f2f2f2;
 }
 
-.checked {
+.checked /*étoiles bleues*/
+{
     color: #0065FC;
-    }
-.unchecked
-    {
+}
+.unchecked /*étoiles grises*/
+{
     color: #6d6d6d;
-    }
+}
 
-.logoMenu
+.logoMenu/*séparation du logo et du menu de navigation*/
 {
     display: flex;
     justify-content: space-between;
 }
 
-nav ul
+nav ul /*Mise en forme du menu de navigation*/
 {
     list-style-type: none;
     display: flex;
     font-weight: bolder;
-
 }
 
-nav a
+nav a /*espacement menu de navigation*/
 {
     margin-right: 4em;
     text-decoration: none;
 }
 
-.hebergements a:focus
+.hebergements a:focus /*mise en forme bouton héberments au clic*/
 {
     color:#0065FC;
     border: solid 0.2em transparent;
@@ -99,7 +116,7 @@ nav a
     padding-top: 1em;
 }
 
-.activites a:focus
+.activites a:focus /*mise ne forme bouton activités au clic*/
 {
     color: #0065FC;
     border: solid 0.2em transparent;
@@ -107,14 +124,14 @@ nav a
     padding-top: 1em;
 }
 
-.inscrire
+.inscrire /*mise en forme bouton S'inscrire*/
 {
     color: #0065FC;
 }
 
 
 
-.boutonmarker
+.boutonmarker /*mise en forme bouton localisation*/
 {
     background-color: #f2f2f2;
     color: #000000;
@@ -122,28 +139,73 @@ nav a
     border-radius: 0.5em 0em 0em 0.5em;
 }
 
-.boutonville
+.boutonville /*mise en forme bouton ville*/
 {
     background-color: #f2f2f2;
 }
 
-input
+input /*mise en forme du champ de saisie*/
 {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-color: transparent;
 }
 
-.boutonrechercher
+.boutonrechercher /*mise en forme bouton rechercher*/
 {
     background-color: #0065FC;
     color: #FFFFFF;
     border-radius: 0em 0.5em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
-
 }
 
-p a
+p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 {
     text-decoration: none;
+}
+
+.fa-money-bill-wave:before
+{
+    padding: 0.6em;
+    background-color: #deebff;
+    border-radius: 1em;
+    margin-left: -2em;
+    margin-right: 1em;
+    color: #0065FC;
+}
+
+.fa-child:before
+{
+    padding: 0.6em 0.8em;
+    background-color: #deebff;
+    border-radius: 1em;
+    margin-left: -2em;
+    margin-right: 1em;
+    color: #0065FC;
+}
+
+.fa-heart:before
+{
+    padding: 0.6em 0.7em;
+    background-color: #deebff;
+    border-radius: 1em;
+    margin-left: -2em;
+    margin-right: 1em;
+    color: #0065FC;
+}
+
+.fa-dog:before
+{
+    padding: 0.6em;
+    background-color: #deebff;
+    border-radius: 1em;
+    margin-left: -2em;
+    margin-right: 1em;
+    color: #0065FC;
+}
+
+.filtres
+{
+    display: flex;
+    justify-content: space-evenly;
 }
