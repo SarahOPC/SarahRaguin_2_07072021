@@ -1,58 +1,65 @@
 *
 {
     font-size: 1,3em;
-    font-family: Raleway, Arial, Verdana, sans-serif;
+    font-family: Raleway-Bold, Arial, Verdana, sans-serif;
 }
 
 a.Economique /* lien non survolé */
 {
     text-decoration: none;
     color: #000000;
+    transition: 2s ease-out;
+
 }
 a.Familial /* lien non survolé */
 {
     text-decoration: none;
     color: #000000;
+    transition: 2s ease-out;
+
 }
 a.Romantique /* lien non survolé */
 {
     text-decoration: none;
     color: #000000;
+    transition: 2s ease-out;
+
 }
 a.Animaux /* lien non survolé */
 {
     text-decoration: none;
     color: #000000;
+    transition: 2s ease-out;
 }
 
 a.Economique:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
-   transition: 1s;
+   transition: 0.5s;
 }
 a.Familial:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
-   transition: 1s;
+   transition: 0.5s;
 }
 a.Romantique:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
-   transition: 1s;
+   transition: 0.5s;
 }
 a.Animaux:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
-   transition: 1s;
+   transition: 0.5s;
 }
 
 .footer
 {
-    background-color: #F2F2F2;
+    background-color: #6d6d6d;
 }
 
 .checked {
@@ -60,7 +67,7 @@ a.Animaux:hover /* lien survolé */
     }
 .unchecked
     {
-    color: #F2F2F2;
+    color: #6d6d6d;
     }
 
 .logoMenu
@@ -83,12 +90,47 @@ nav a
     text-decoration: none;
 }
 
-.hebergements a
+.hebergements a:focus
 {
     color:#0065FC;
+    border: solid 0.2em transparent;
+    border-top-color: #0065FC;
+    padding-top: 1em;
+}
+
+.activites a:focus
+{
+    color: #0065FC;
+    border: solid 0.2em transparent;
+    border-top-color: #0065FC;
+    padding-top: 1em;
 }
 
 .inscrire
 {
     color: #0065FC;
+}
+
+
+
+.boutonmarker
+{
+    background-color: #6d6b6b;
+    color: #000000;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.boutonville
+{
+    background-color: #f2f2f2;
+}
+
+.boutonrechercher
+{
+    background-color: #0065FC;
+}
+
+p a
+{
+    text-decoration: none;
 }
