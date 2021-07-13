@@ -1,11 +1,11 @@
 *
 {
-    font-size: 1,3em;
+    font-size: 1em;
     font-family: Raleway-Bold, Arial, Verdana, sans-serif;
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
-a.Economique /* lien non survolé */
+a.Economique, a.Familial, a.Romantique, a.Animaux /* lien non survolé */
 {
     text-decoration: none;
     color: #000000;
@@ -14,61 +14,11 @@ a.Economique /* lien non survolé */
     border-radius: 1.5em 1.5em 1.5em 1.5em;
     border: solid #f2f2f2;
     margin-left: 1em;
-
-}
-a.Familial /* lien non survolé */
-{
-    text-decoration: none;
-    color: #000000;
-    transition: 2s ease-out;
-    padding: 0.7em 1.5em 0.7em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border: solid #f2f2f2;
-    margin-left: 1em;
-
-}
-a.Romantique /* lien non survolé */
-{
-    text-decoration: none;
-    color: #000000;
-    transition: 2s ease-out;
-    padding: 0.7em 1.5em 0.7em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border: solid #f2f2f2;
-    margin-left: 1em;
-
-}
-a.Animaux /* lien non survolé */
-{
-    text-decoration: none;
-    color: #000000;
-    transition: 2s ease-out;
-    padding: 0.7em 1.5em 0.7em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border: solid #f2f2f2;
-    margin-left: 1em;
+    font-family: Raleway-Bold;
 
 }
 
-a.Economique:hover /* lien survolé */
-{
-   text-decoration: underline;
-   color: #0065FC;
-   transition: 0.5s;
-}
-a.Familial:hover /* lien survolé */
-{
-   text-decoration: underline;
-   color: #0065FC;
-   transition: 0.5s;
-}
-a.Romantique:hover /* lien survolé */
-{
-   text-decoration: underline;
-   color: #0065FC;
-   transition: 0.5s;
-}
-a.Animaux:hover /* lien survolé */
+a.Economique:hover, a.Familial:hover, a.Romantique:hover, a.Animaux:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
@@ -108,17 +58,9 @@ nav a /*espacement menu de navigation*/
     text-decoration: none;
 }
 
-.hebergements a:focus /*mise en forme bouton héberments au clic*/
+a.hebergements:hover:focus, a.activites:hover:focus /*mise en forme boutons hébergements et activités au clic*/
 {
     color:#0065FC;
-    border: solid 0.2em transparent;
-    border-top-color: #0065FC;
-    padding-top: 1em;
-}
-
-.activites a:focus /*mise ne forme bouton activités au clic*/
-{
-    color: #0065FC;
     border: solid 0.2em transparent;
     border-top-color: #0065FC;
     padding-top: 1em;
@@ -128,8 +70,6 @@ nav a /*espacement menu de navigation*/
 {
     color: #0065FC;
 }
-
-
 
 .boutonmarker /*mise en forme bouton localisation*/
 {
@@ -165,7 +105,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 }
 
 /*mise en forme des icones et boutons du filtre */
-.fa-money-bill-wave:before
+.fa-money-bill-wave:before, .fa-dog:before
 {
     padding: 0.6em;
     background-color: #deebff;
@@ -195,16 +135,6 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     color: #0065FC;
 }
 
-.fa-dog:before
-{
-    padding: 0.6em;
-    background-color: #deebff;
-    border-radius: 1em;
-    margin-left: -2em;
-    margin-right: 1em;
-    color: #0065FC;
-}
-
 .filtres
 {
     display: flex;
@@ -220,4 +150,66 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     color: #FFFFFF;
     margin-right: 1em;
     text-shadow: 0 0 0.1em black;
+}
+
+.div1
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.div2
+{
+    flex-basis: 60%;
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    justify-content: space-around;
+}
+
+.div3
+{
+    flex-basis: 30%;
+    display: table-caption;
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    flex-direction: column;
+}
+
+.div4, .div5
+{
+    display: flex;
+    flex-basis: 90%;
+    flex-wrap: nowrap;
+}
+
+.div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14
+{
+    box-shadow: 0.3em 0.3em 0.3em #6d6d6d;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border: 0.1em solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    padding: 0.3em 0.3em 2.5em 0.3em;
+}
+
+.div6, .div7, .div8, .div9, .div10, .div11
+{
+    width: 12em;
+    height: 12em;
+}
+
+img
+{
+    width: 100%;
+    height: 65%;
+    border-radius: 10% 10% 0 0;
+}
+
+.div2 p
+{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    border-radius: 1em;
 }
