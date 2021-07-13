@@ -5,20 +5,19 @@
     background-color: transparent;
 }
 
-a.Economique, a.Familial, a.Romantique, a.Animaux /* lien non survolé */
+a.fas /* lien non survolé */
 {
     text-decoration: none;
     color: #000000;
     transition: 2s ease-out;
-    padding: 0.7em 1.5em 0.7em 1.5em;
+    padding: 0.7em 1.5em 0.7em 0em;
     border-radius: 1.5em 1.5em 1.5em 1.5em;
     border: solid #f2f2f2;
-    margin-left: 1em;
     font-family: Raleway-Bold;
-
+    
 }
 
-a.Economique:hover, a.Familial:hover, a.Romantique:hover, a.Animaux:hover /* lien survolé */
+a.fas:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
@@ -39,7 +38,7 @@ a.Economique:hover, a.Familial:hover, a.Romantique:hover, a.Animaux:hover /* lie
     color: #6d6d6d;
 }
 
-.logoMenu/*séparation du logo et du menu de navigation*/
+.logo-menu/*séparation du logo et du menu de navigation*/
 {
     display: flex;
     justify-content: space-between;
@@ -58,7 +57,18 @@ nav a /*espacement menu de navigation*/
     text-decoration: none;
 }
 
-a.hebergements:hover:focus, a.activites:hover:focus /*mise en forme boutons hébergements et activités au clic*/
+nav
+{
+    display: flex;
+    color: #0065FC;
+}
+
+nav p
+{
+    font-weight: bold;
+}
+
+.logo-menu nav ul li:hover:focus /*mise en forme boutons hébergements et activités au clic*/
 {
     color:#0065FC;
     border: solid 0.2em transparent;
@@ -71,7 +81,7 @@ a.hebergements:hover:focus, a.activites:hover:focus /*mise en forme boutons héb
     color: #0065FC;
 }
 
-.boutonmarker /*mise en forme bouton localisation*/
+.marker /*mise en forme bouton localisation*/
 {
     background-color: #f2f2f2;
     color: #000000;
@@ -79,7 +89,7 @@ a.hebergements:hover:focus, a.activites:hover:focus /*mise en forme boutons héb
     border-radius: 0.5em 0em 0em 0.5em;
 }
 
-.boutonville /*mise en forme bouton ville*/
+.city /*mise en forme bouton ville*/
 {
     background-color: #f2f2f2;
 }
@@ -91,7 +101,7 @@ input /*mise en forme du champ de saisie*/
     border-color: transparent;
 }
 
-.boutonrechercher /*mise en forme bouton rechercher*/
+.search /*mise en forme bouton rechercher*/
 {
     background-color: #0065FC;
     color: #FFFFFF;
@@ -107,35 +117,35 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 /*mise en forme des icones et boutons du filtre */
 .fa-money-bill-wave:before, .fa-dog:before
 {
-    padding: 0.6em;
+    padding: 0.8em;
     background-color: #deebff;
-    border-radius: 1em;
-    margin-left: -2em;
-    margin-right: 1em;
+    border-radius: 1.2em;
+    margin-right: 0;
     color: #0065FC;
+    margin-right: 1em;
 }
 
 .fa-child:before
 {
-    padding: 0.6em 0.8em;
+    padding: 0.8em;
     background-color: #deebff;
-    border-radius: 1em;
-    margin-left: -2em;
-    margin-right: 1em;
+    border-radius: 1.2em;
+    margin-right: 0;
     color: #0065FC;
+    margin-right: 1em;
 }
 
 .fa-heart:before
 {
-    padding: 0.6em 0.7em;
+    padding: 0.8em;
     background-color: #deebff;
-    border-radius: 1em;
-    margin-left: -2em;
-    margin-right: 1em;
+    border-radius: 1.2em;
+    margin-right: 0;
     color: #0065FC;
+    margin-right: 1em;
 }
 
-.filtres
+.filters
 {
     display: flex;
     justify-content: space-evenly;

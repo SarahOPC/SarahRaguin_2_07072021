@@ -8,20 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e98fa15a44.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e98fa15a44.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
     <header>
-        <!-- div avec le logo et le menu de navigation -->
-        <div class="logoMenu">
+        <div class="logo-menu">
             <p><img src="../images/logo/Reservia.svg" alt="logo Reservia" /></p>
             <nav>
                 <ul>
-                    <li><a href="#Hebergement">Hébergements</a><div class="hebergements"></div></li>
-                    <li><a href="#Activites">Activités</a><div class="activites"></div></li>
-                    <li>S'inscrire<div class="inscrire"></div></li>
+                    <li><a href="#Hebergement">Hébergements</a></li>
+                    <li><a href="#Activites">Activités</a></li>
                 </ul>
+                    <p>S'inscrire</p>
             </nav>
         </div>
 
@@ -29,20 +28,19 @@
         <p>En plein centre ville ou en pleine nature</p>
         <p>
             <!--<form method="post" action"formulaireRecherche.php"></form>-->
-            <a href="#" class="btn boutonmarker"><i class="fas fa-map-marker-alt"></i></a>
-            <a href="#" class="btn boutonville"></a><input type="text" name="ville" value="Marseille, France" />
-            <a href="#" class="btn boutonrechercher">Rechercher</a><a href="formulaireRecherche.php"></a>
+            <a href="#" class="btn marker"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="#" class="btn city"></a><input type="text" name="ville" value="Marseille, France" />
+            <a href="#" class="btn search">Rechercher</a><a href="formulaireRecherche.php"></a>
         </p>
     </header>
 
-
-    
-        <div class="filtres">
+        <div class="filters">
             <h2>Filtres
-                <i><a href="#" class="Economique fas fa-money-bill-wave">Economique</a></i>
-                <i><a href="#" class="Familial fas fa-child">Familial</a></i>
-                <i><a href="#" class="Romantique fas fa-heart">Romantique</a></i>
-                <i><a href="#" class="Animaux fas fa-dog">Animaux autorisés</a></i>
+                <a href="#" class="fas"><i class="fas fa-money-bill-wave"></i>Economique</a>
+                <a href="#" class="fas"><i class="fas fa-child"></i>Familial</a>
+                <a href="#" class="fas"><i class="fas fa-heart"></i>Romantique</a>
+                <a href="#" class="fas"><i class="fas fa-dog"></i>Animaux autorisés</a>
+
             </h2>
         </div>
         <div class="fas fa-info-circle"></div>Plus de 500 logements disponibles dans cette ville
