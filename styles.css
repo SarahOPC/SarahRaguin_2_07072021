@@ -152,41 +152,58 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     text-shadow: 0 0 0.1em black;
 }
 
-.div1
+.container
 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-.div2
+.item1
 {
     flex-basis: 60%;
     background-color: #f2f2f2;
     border-radius: 1em;
-    justify-content: space-around;
+    padding-top: 3em;
+    height: fit-content;
 }
 
-.div3
+.afficher
 {
-    flex-basis: 30%;
+    height: 4em;
+}
+
+#afficherPlus
+{
+    margin-left: 1em;
+    font-family: Raleway-Bold;
+    font-weight: bold;
+}
+
+.item2
+{
+    flex-basis: 25%;
     display: table-caption;
     background-color: #f2f2f2;
     border-radius: 1em;
     flex-direction: column;
+    padding-top: 3em;
+
 }
 
-.div4, .div5
+.item1-item1, .item1-item2
 {
     display: flex;
-    flex-basis: 90%;
     flex-wrap: nowrap;
 }
 
-.div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14
+.vignettes
 {
+    width: 12em;
+    height: 12em;
     box-shadow: 0.3em 0.3em 0.3em #6d6d6d;
-    margin-left: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     margin-bottom: 1em;
     border: 0.1em solid #FFFFFF;
     background-color: #FFFFFF;
@@ -194,22 +211,54 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     padding: 0.3em 0.3em 2.5em 0.3em;
 }
 
-.div6, .div7, .div8, .div9, .div10, .div11
-{
-    width: 12em;
-    height: 12em;
-}
-
 img
 {
     width: 100%;
     height: 65%;
-    border-radius: 10% 10% 0 0;
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
 }
 
-.div2 p
+.container p
 {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     border-radius: 1em;
+}
+
+.populaire
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item2 .vignettes
+{
+    width: 18em;
+    display: flex;
+    height: min-content;
+    padding-bottom: 0.5em;
+}
+
+.item2 img
+{
+    float: left;
+    border-radius: 1em 0em 0em 1em;
+    margin-right: 0.5em;
+    width: 50%;
+    height: 50%;
+}
+
+.item2 p, .item2 .star
+{
+    float: right;
+}
+
+.legende
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
