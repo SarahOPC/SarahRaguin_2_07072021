@@ -5,38 +5,7 @@
     background-color: transparent;
 }
 
-a.fas /* lien non survolé */
-{
-    text-decoration: none;
-    color: #000000;
-    transition: 2s ease-out;
-    padding: 0.7em 1.5em 0.7em 0em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border: solid #f2f2f2;
-    font-family: Raleway-Bold;
-    
-}
-
-a.fas:hover /* lien survolé */
-{
-   text-decoration: underline;
-   color: #0065FC;
-   transition: 0.5s;
-}
-
-.footer
-{
-    background-color: #f2f2f2;
-}
-
-.checked /*étoiles bleues*/
-{
-    color: #0065FC;
-}
-.unchecked /*étoiles grises*/
-{
-    color: #6d6d6d;
-}
+/* Mise en forme du menu */
 
 .logo-menu/*séparation du logo et du menu de navigation*/
 {
@@ -57,13 +26,13 @@ nav a /*espacement menu de navigation*/
     text-decoration: none;
 }
 
-nav
+nav /* couleur et positionnement du menu */
 {
     display: flex;
     color: #0065FC;
 }
 
-nav p
+nav p /* mise en gras du bouton inscrire*/
 {
     font-weight: bold;
 }
@@ -75,6 +44,9 @@ nav p
     border-top-color: #0065FC;
     padding-top: 1em;
 }
+/* Fin de la mise en forme du menu*/
+
+/* Mise en forme premier paragraphe et recherche */
 
 .marker /*mise en forme bouton localisation*/
 {
@@ -104,12 +76,36 @@ input /*mise en forme du champ de saisie*/
     padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
-p a /*mise ne forme de tout le paragraphe de recherche de villes*/
+p a /*mise en forme de tout le paragraphe de recherche de villes */
 {
     text-decoration: none;
 }
 
-/*mise en forme des icones et boutons du filtre */
+/* Fin Mise en forme premier paragraphe et recherche */
+
+
+/* Mise en forme des filtres */
+
+a.fas /* lien non survolé */
+{
+    text-decoration: none;
+    color: #000000;
+    transition: 2s ease-out;
+    padding: 0.7em 1.5em 0.7em 0em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    border: solid #f2f2f2;
+    font-family: Raleway-Bold;
+}
+
+a.fas:hover /* lien survolé */
+{
+   text-decoration: underline;
+   color: #0065FC;
+   transition: 0.5s;
+}
+
+/* Mise en forme des icones et boutons du filtre */
+
 .fa-money-bill-wave:before, .fa-dog:before, .fa-heart:before
 {
     padding: 0.8em;
@@ -139,7 +135,11 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     margin-bottom: 1.5em;
 }
 
-.fa-info-circle /*mise en forme de la partie information */
+/* Fin Mise en forme des filtres */
+
+/* Mise en forme de la partie information */
+
+.fa-info-circle 
 {
     font-size: larger;
     margin-left: 0.5em;
@@ -150,57 +150,9 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     text-shadow: 0 0 0.1em black;
 }
 
-.container
-{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin-top: 2em;
-}
+/* Fin Mise en forme de la partie information */
 
-.item1
-{
-    flex-basis: 60%;
-    background-color: #f2f2f2;
-    border-radius: 1em;
-    padding-top: 3em;
-    height: fit-content;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-}
-
-.show
-{
-    height: 4em;
-}
-
-#show-more
-{
-    margin-left: 1em;
-    font-family: Raleway-Bold;
-    font-weight: bold;
-}
-
-.item2
-{
-    flex-basis: 25%;
-    display: table-caption;
-    background-color: #f2f2f2;
-    border-radius: 1em;
-    flex-direction: column;
-    padding-top: 3em;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-
-}
-
-.item1-item1, .item1-item2
-{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.thumbnails
+.thumbnails /* vignettes avec les photos */
 {
     width: 20em;
     height: 12em;
@@ -222,14 +174,91 @@ img
     object-fit: cover;
 }
 
-.container p
+
+
+/* Mise en forme du container 1 - Hébergement et populaire */
+
+.container1
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+/* Mise en forme des étoiles*/
+
+.checked /*étoiles bleues*/
+{
+    color: #0065FC;
+}
+.unchecked /*étoiles grises*/
+{
+    color: #6d6d6d;
+}
+/* Fin Mise en forme des étoiles*/
+
+.container1 p
 {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     border-radius: 1em;
 }
 
-.popular
+.container1 h2
+{
+    font-size: large;
+    font-weight: bold;
+    font-family: Raleway-Bold;
+}
+
+/* Mise en forme de la partie hébergement */
+
+.container1 .item1
+{
+    flex-basis: 60%;
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    padding-top: 3em;
+    height: fit-content;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.show /* Espace sous Afficher plus */
+{
+    height: 4em;
+}
+
+#show-more /*Afficher plus */
+{
+    margin-left: 1em;
+    font-family: Raleway-Bold;
+    font-weight: bold;
+}
+
+.container1 .item1-item1, .container1 .item1-item2
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* Fin de la mise en forme de la partie hébergement */
+
+/* Mise en forme de la partie populaire */
+
+.container1 .item2
+{
+    flex-basis: 25%;
+    display: table-caption;
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.popular /* placement du titre et de son icône */
 {
     display: flex;
     flex-wrap: nowrap;
@@ -237,16 +266,20 @@ img
     align-items: center;
 }
 
-.item2 .thumbnails
+/* Fin Mise en forme de la partie populaire*/
+
+/* vignettes contenants les photos dans populaire */
+
+.container1 .item2 .thumbnails
 {
     width: 22em;
     display: flex;
     height: min-content;
     padding: 0.3em;
-
+    
 }
 
-.item2 img
+.container1 .item2 img
 {
     max-height: 100%;
     float: left;
@@ -258,7 +291,7 @@ img
     min-width: 10em;
 }
 
-.item2 p, .item2 .star
+.container1 .item2 p, .container1 .item2 .star
 {
     float: right;
 }
@@ -274,10 +307,95 @@ span.title-p
 {
     font-weight: bold;
 }
+/* Fin vignettes contenants les photos */
 
-.container h2
+/* Fin Mise en forme du container 1 - Hébergement et populaire */
+
+/* Mise en forme du container2 - Activités */
+
+.container2
+{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2em;
+}
+
+.container2 h1
 {
     font-size: large;
-    font-weight: bold;
-    font-family: Raleway-Bold;
+}
+
+.container2 .item1, .container2 .item2
+{
+    display: flex;
+
+}
+
+.container2 .item1-item1, .container2 .item1-item2
+{
+    display: flex;
+}
+
+.container2 .item2-item1, .container2 .item2-item2
+{
+    display: flex;
+}
+/* Placer item 2-2 à côté de 2-1*/
+.container2 .item1-item2, .container2 .item1-item2
+{
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+/* Fin Mise en forme du container2 - Activités */
+
+/* Mise en forme du footer */
+
+footer
+{
+    display: inline-flex;
+    background-color: #f2f2f2;
+}
+
+/* Fin mise en forme du footer */
+
+/* test */
+.container-test
+{
+    background-color: red;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.item-child1
+{
+    background-color: blue;
+    display: flex;
+}
+
+.item-child2
+{
+    background-color: green;
+}
+
+.item-child3
+{
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.item-child4
+{
+    background-color: yellow;
+    display: flex;
+}
+
+.item-child5
+{
+    background-color: pink;
+}
+
+.item-child6
+{
+    background-color: purple;
 }
