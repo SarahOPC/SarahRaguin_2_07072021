@@ -134,6 +134,9 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    margin-left: -47em;
+    margin-bottom: 1.5em;
 }
 
 .fa-info-circle /*mise en forme de la partie information */
@@ -152,6 +155,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-top: 2em;
 }
 
 .item1
@@ -161,6 +165,8 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     border-radius: 1em;
     padding-top: 3em;
     height: fit-content;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
 }
 
 .show
@@ -183,6 +189,8 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     border-radius: 1em;
     flex-direction: column;
     padding-top: 3em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
 
 }
 
@@ -194,7 +202,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 
 .thumbnails
 {
-    width: 12em;
+    width: 20em;
     height: 12em;
     box-shadow: 0.3em 0.3em 0.3em #6d6d6d;
     margin-left: 0.5em;
@@ -231,7 +239,7 @@ img
 
 .item2 .thumbnails
 {
-    width: 18em;
+    width: 22em;
     display: flex;
     height: min-content;
     padding: 0.3em;
@@ -265,4 +273,11 @@ img
 span.title-p
 {
     font-weight: bold;
+}
+
+.container h2
+{
+    font-size: large;
+    font-weight: bold;
+    font-family: Raleway-Bold;
 }
