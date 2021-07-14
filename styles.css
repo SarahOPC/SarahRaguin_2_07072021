@@ -1,6 +1,6 @@
 *
 {
-    font-size: 1em;
+    font-size: 0.95em;
     font-family: Raleway-Bold, Arial, Verdana, sans-serif;
     background-color: transparent;
 }
@@ -76,11 +76,6 @@ nav p
     padding-top: 1em;
 }
 
-.inscrire /*mise en forme bouton S'inscrire*/
-{
-    color: #0065FC;
-}
-
 .marker /*mise en forme bouton localisation*/
 {
     background-color: #f2f2f2;
@@ -115,7 +110,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 }
 
 /*mise en forme des icones et boutons du filtre */
-.fa-money-bill-wave:before, .fa-dog:before
+.fa-money-bill-wave:before, .fa-dog:before, .fa-heart:before
 {
     padding: 0.8em;
     background-color: #deebff;
@@ -127,17 +122,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
 
 .fa-child:before
 {
-    padding: 0.8em;
-    background-color: #deebff;
-    border-radius: 1.2em;
-    margin-right: 0;
-    color: #0065FC;
-    margin-right: 1em;
-}
-
-.fa-heart:before
-{
-    padding: 0.8em;
+    padding: 0.8em 1em;
     background-color: #deebff;
     border-radius: 1.2em;
     margin-right: 0;
@@ -178,12 +163,12 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     height: fit-content;
 }
 
-.afficher
+.show
 {
     height: 4em;
 }
 
-#afficherPlus
+#show-more
 {
     margin-left: 1em;
     font-family: Raleway-Bold;
@@ -207,7 +192,7 @@ p a /*mise ne forme de tout le paragraphe de recherche de villes*/
     flex-wrap: nowrap;
 }
 
-.vignettes
+.thumbnails
 {
     width: 12em;
     height: 12em;
@@ -236,7 +221,7 @@ img
     border-radius: 1em;
 }
 
-.populaire
+.popular
 {
     display: flex;
     flex-wrap: nowrap;
@@ -244,21 +229,25 @@ img
     align-items: center;
 }
 
-.item2 .vignettes
+.item2 .thumbnails
 {
     width: 18em;
     display: flex;
     height: min-content;
-    padding-bottom: 0.5em;
+    padding: 0.3em;
+
 }
 
 .item2 img
 {
+    max-height: 100%;
     float: left;
     border-radius: 1em 0em 0em 1em;
     margin-right: 0.5em;
-    width: 50%;
-    height: 50%;
+    width: 10em;
+    height: 8em;
+    object-fit: cover;
+    min-width: 10em;
 }
 
 .item2 p, .item2 .star
@@ -266,9 +255,14 @@ img
     float: right;
 }
 
-.legende
+.caption
 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+
+span.title-p
+{
+    font-weight: bold;
 }

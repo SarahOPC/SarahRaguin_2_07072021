@@ -17,8 +17,8 @@
             <p><img src="../images/logo/Reservia.svg" alt="logo Reservia" /></p>
             <nav>
                 <ul>
-                    <li><a href="#Hebergement">Hébergements</a></li>
-                    <li><a href="#Activites">Activités</a></li>
+                    <li><a href="#accommodation">Hébergements</a></li>
+                    <li><a href="#activities">Activités</a></li>
                 </ul>
                     <p>S'inscrire</p>
             </nav>
@@ -29,7 +29,7 @@
         <p>
             <!--<form method="post" action"formulaireRecherche.php"></form>-->
             <a href="#" class="btn marker"><i class="fas fa-map-marker-alt"></i></a>
-            <a href="#" class="btn city"></a><input type="text" name="ville" value="Marseille, France" />
+            <a href="#" class="btn city"></a><input type="text" name="city" value="Marseille, France" />
             <a href="#" class="btn search">Rechercher</a><a href="formulaireRecherche.php"></a>
         </p>
     </header>
@@ -48,14 +48,14 @@
 
     
         <div class="container">
-            <div class="item1" id="Hebergement"><a href="#" target="_blank"></a><h1>Hébergements à Marseille</h1>
+            <div class="item1" id="accommodation"><a href="#" target="_blank"></a><h1>Hébergements à Marseille</h1>
                 
                 <div class="item1-item1">
                 
-                    <div class="vignettes">
+                    <div class="thumbnails">
                         <img src="../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Auberge La Cannebière"/>
-                            <p>Auberge La Cannebière</p>
+                            <p><span class="title-p">Auberge La Cannebière</span></p>
                         <p>Nuit à partir de 25€</p>
                         <div class="star"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -64,10 +64,10 @@
                         <span class="fa fa-star unchecked"></span></div>
                     </div>
 
-                    <div class="vignettes">
+                    <div class="thumbnails">
                         <img src="../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="Hôtel du port" />
-                            <p>Hôtel du port</p>
+                            <p><span class="title-p">Hôtel du port</span></p>
                         <p>Nuit à partir de 52€</p>
                         <div class="star"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -76,10 +76,10 @@
                         <span class="fa fa-star checked"></span></div>
                     </div>
 
-                    <div class="vignettes">
+                    <div class="thumbnails">
                         <img src="../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="Hôtel Les Mouettes" />
-                            <p>Hôtel Les Mouettes</p>
+                            <p><span class="title-p">Hôtel Les Mouettes</span></p>
                         <p>Nuit à partir de 76€</p>
                         <div class="star"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -90,10 +90,10 @@
                 </div>
 
                 <div class="item1-item2">
-                    <div class="vignettes">
+                    <div class="thumbnails">
                         <img src="../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="Hôtel de la mer" />
-                            <p>Hôtel de la mer</p>
+                            <p><span class="title-p">Hôtel de la mer</span></p>
                         <p>Nuit à partir de 46€</p>
                         <div class="star"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -102,10 +102,10 @@
                         <span class="fa fa-star unchecked"></span></div>
                     </div>
 
-                    <div class="vignettes">
+                    <div class="thumbnails">
                         <img src="../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="Auberge Le Panier" />
-                            <p>Auberge Le Panier</p>
+                            <p><span class="title-p">Auberge Le Panier</span></p>
                         <p>Nuit à partir de 23€</p>
                         <div class="star"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -114,10 +114,10 @@
                         <span class="fa fa-star unchecked"></span></div>
                     </div>
 
-                    <div class="vignettes">
+                    <div class="thumbnails">
                         <img src="../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="Hôtel chez Amina" />
-                            <p>Hôtel chez Amina</p>
+                            <p><span class="title-p">Hôtel chez Amina</span></p>
                         <p>Nuit à partir de 96€</p>
                         <div class="star"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -126,16 +126,16 @@
                         <span class="fa fa-star checked"></span></div>
                     </div>
                 </div>
-                <p id="afficherPlus"> Afficher plus</p><div class="afficher"></div>
+                <p id="show-more"> Afficher plus</p><div class="show"></div>
             </div>
         
 
             <div class="item2">
-                <div class="populaire"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
-                <div class="vignettes">
+                <div class="popular"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
+                <div class="thumbnails">
                     <img src="../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Hôtel Le soleil du matin" />
-                        <div class="legende"><p>Hôtel Le soleil du matin</p>
+                        <div class="caption"><p><span class="title-p">Hôtel Le soleil du matin</span></p>
                     <p>Nuit à partir de 128€</p>
                     <div class="star"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -144,10 +144,10 @@
                     <span class="fa fa-star checked"></span></div></div>
                 </div>
 
-                <div class="vignettes">
+                <div class="thumbnails">
                     <img src="../images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
                             alt="Au coeur de l'eau Chambres d'hôtes" />
-                        <div class="legende"><p>Au coeur de l'eau<br>Chambres d'hôtes</p>
+                        <div class="caption"><p><span class="title-p">Au coeur de l'eau<br>Chambres d'hôtes</span></p>
                     <p>Nuit à partir de 71€</p>
                     <div class="star"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -156,10 +156,10 @@
                     <span class="fa fa-star unchecked"></span></div></div>
                 </div>
 
-                <div class="vignettes">
+                <div class="thumbnails">
                     <img src="../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                             alt="Hôtel Tout bleu et Blanc" />
-                        <div class="legende"><p>Hôtel Tout bleu et Blanc</p>
+                        <div class="caption"><p><span class="title-p">Hôtel Tout bleu et Blanc</span></p>
                     <p>Nuit à partir de 68€</p>
                     <div class="star"><span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -171,7 +171,7 @@
         </div>
     
 
-        <div id="Activites"><a href="#" target="_blank"></a>
+        <div id="activities"><a href="#" target="_blank"></a>
             <h1>Activités à Marseille</h1>
             <div>
                 <img src="../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
