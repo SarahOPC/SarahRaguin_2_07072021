@@ -411,13 +411,163 @@ footer
 
 .first-item
 {
-    width: 30%;
+    width: 34%;
     margin-left: 3em;
 }
 
 .second-item, .third-item
 {
-    width: 30%;
+    width: 33%;
 }
 
+
 /* Fin mise en forme du footer */
+
+/*######################################################################################################################*/
+
+/* Media Queries */
+
+/*######################################################################################################################*/
+
+/* Media Queries - Téléphone portable - < 768 px */
+
+
+/*######################################################################################################################*/
+
+/* Media Queries - Téléphone et tablette - < ou = 991 px */
+
+@media screen and (max-width: 991px) {
+    *
+    {
+        font-size: 1.1em;
+        flex-direction: column;
+    }
+    
+    .container1
+    {
+        flex-direction: column-reverse;
+    }
+    /* display: inline ou float: left, mettre les 2 li l'une à côté de l'autre */
+    .logo-menu nav ul li
+    {
+        float: left;
+    }
+
+    .first-item
+    {
+        margin-left: 0em;
+    }
+
+    .container-footer
+    {
+        margin-left: 2em;
+    }
+
+    .thumbnails
+    {
+        width: 27em;
+        height: 15em;
+    }
+
+    .container1 .item2 .thumbnails
+    {
+        width: 33em;
+        height: 15em;
+        position: relative;
+    }
+    
+    .caption
+    {
+        position: absolute;
+        left: 40%
+    }
+
+    .container1 .item2 img
+    {
+        height: inherit;
+    }
+
+    .container2 .item1-item1 img, .container2 .item2-item1 img
+    {
+        height: inherit;
+    }
+
+    .container2 .item1-item1 .thumbnails, .container2 .item2-item1 .thumbnails
+    {
+        height: 15em;
+        width: auto;
+        padding-bottom: 7em;
+    }
+
+    .container2 .item1-item2 .thumbnails, .container2 .item2-item2 .thumbnails
+    {
+        width: auto;
+        height: 15em;
+        padding-bottom: 1em;
+    }
+
+    .title
+    {
+        font-size: 1.8em;
+        margin-left: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #show-more
+    {
+        font-size: 2.2em;
+    }
+
+    .container1 h2
+    {
+        font-size: 2.2em;
+    }
+
+    .popular
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filters
+    {
+        margin-left: 0em;
+        width: 57%;
+        line-height: 4em;
+        font-size: 1.7em;
+    }
+
+    nav p
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 2em;
+        margin-right: 1.5em;
+    }
+
+    .logo-menu img
+    {
+        width: 20%;
+    }
+  }
+
+/*
+  @media only screen and (orientation: landscape) {
+    {
+
+    }
+  }
+
+
+/*######################################################################################################################*/
+
+/* Media Queries - Grands écrans - > 1200 px *
+
+@media screen and (min-width: 1200px) {
+    {
+
+    }
+  }
+/* Fin Media Queries */
