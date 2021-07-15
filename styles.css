@@ -4,7 +4,7 @@
     font-family: Raleway-Bold, Arial, Verdana, sans-serif;
     background-color: transparent;
 }
-
+/*######################################################################################################################*/
 /* Mise en forme du menu */
 
 .logo-menu/*séparation du logo et du menu de navigation*/
@@ -46,6 +46,8 @@ nav p /* mise en gras du bouton inscrire*/
 }
 /* Fin de la mise en forme du menu*/
 
+/*######################################################################################################################*/
+
 /* Mise en forme premier paragraphe et recherche */
 
 .marker /*mise en forme bouton localisation*/
@@ -83,6 +85,7 @@ p a /*mise en forme de tout le paragraphe de recherche de villes */
 
 /* Fin Mise en forme premier paragraphe et recherche */
 
+/*######################################################################################################################*/
 
 /* Mise en forme des filtres */
 
@@ -137,6 +140,8 @@ a.fas:hover /* lien survolé */
 
 /* Fin Mise en forme des filtres */
 
+/*######################################################################################################################*/
+
 /* Mise en forme de la partie information */
 
 .fa-info-circle 
@@ -151,6 +156,8 @@ a.fas:hover /* lien survolé */
 }
 
 /* Fin Mise en forme de la partie information */
+
+/*######################################################################################################################*/
 
 .thumbnails /* vignettes avec les photos */
 {
@@ -174,7 +181,7 @@ img
     object-fit: cover;
 }
 
-
+/*######################################################################################################################*/
 
 /* Mise en forme du container 1 - Hébergement et populaire */
 
@@ -244,12 +251,12 @@ img
 }
 /* Fin de la mise en forme de la partie hébergement */
 
+
 /* Mise en forme de la partie populaire */
 
 .container1 .item2
 {
     flex-basis: 25%;
-    display: table-caption;
     background-color: #f2f2f2;
     border-radius: 1em;
     flex-direction: column;
@@ -267,6 +274,7 @@ img
 }
 
 /* Fin Mise en forme de la partie populaire*/
+
 
 /* vignettes contenants les photos dans populaire */
 
@@ -311,43 +319,75 @@ span.title-p
 
 /* Fin Mise en forme du container 1 - Hébergement et populaire */
 
+/*######################################################################################################################*/
+
 /* Mise en forme du container2 - Activités */
 
 .container2
 {
     display: flex;
-    flex-wrap: nowrap;
-    margin-top: 2em;
-}
-
-.container2 h1
-{
-    font-size: large;
+    justify-content: space-evenly;
 }
 
 .container2 .item1, .container2 .item2
 {
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 .container2 .item1-item1, .container2 .item1-item2
 {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .container2 .item2-item1, .container2 .item2-item2
 {
     display: flex;
+    justify-content: space-evenly;
 }
-/* Placer item 2-2 à côté de 2-1*/
-.container2 .item1-item2, .container2 .item1-item2
+
+.container2 .item1-item2, .container2 .item2-item2
 {
     flex-direction: column;
-    flex-basis: 50%;
+}
+
+.container2 p
+{
+    font-weight: bold;
+}
+
+.container2 .item1
+{
+    float: left;
+}
+
+.container2 .item1-item1 img, .container2 .item2-item1 img
+{
+    height: 24.5em;
+}
+
+.container2 .item1-item1 .thumbnails, .container2 .item2-item1 .thumbnails
+{
+    height: fit-content;
+}
+
+.container2 .item1-item2 .thumbnails, .container2 .item2-item2 .thumbnails
+{
+    width: 27em;
 }
 
 /* Fin Mise en forme du container2 - Activités */
+
+/*######################################################################################################################*/
+
+.title
+{
+    font-size: large;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
 
 /* Mise en forme du footer */
 
@@ -358,44 +398,3 @@ footer
 }
 
 /* Fin mise en forme du footer */
-
-/* test */
-.container-test
-{
-    background-color: red;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.item-child1
-{
-    background-color: blue;
-    display: flex;
-}
-
-.item-child2
-{
-    background-color: green;
-}
-
-.item-child3
-{
-    background-color: black;
-    color: #FFFFFF;
-}
-
-.item-child4
-{
-    background-color: yellow;
-    display: flex;
-}
-
-.item-child5
-{
-    background-color: pink;
-}
-
-.item-child6
-{
-    background-color: purple;
-}
