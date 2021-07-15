@@ -393,8 +393,31 @@ span.title-p
 
 footer
 {
-    display: inline-flex;
     background-color: #f2f2f2;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.container-footer
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-footer p
+{
+    line-height: 1.5em;
+}
+
+.first-item
+{
+    width: 30%;
+    margin-left: 3em;
+}
+
+.second-item, .third-item
+{
+    width: 30%;
 }
 
 /* Fin mise en forme du footer */
