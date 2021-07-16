@@ -83,6 +83,11 @@ p a /*mise en forme de tout le paragraphe de recherche de villes */
     text-decoration: none;
 }
 
+.search-cell
+{
+    display: none;
+}
+
 /* Fin Mise en forme premier paragraphe et recherche */
 
 /*######################################################################################################################*/
@@ -443,14 +448,21 @@ footer
         flex-direction: column;
     }
     
+    header h1
+    {
+        margin-left: 3em;
+        margin-right: 7em;
+        margin-top: 2em;
+    }
+
     .container1
     {
         flex-direction: column-reverse;
     }
-    /* display: inline ou float: left, mettre les 2 li l'une à côté de l'autre */
+
     .logo-menu nav ul li
     {
-        float: left;
+        display: inline;
     }
 
     .first-item
@@ -465,13 +477,13 @@ footer
 
     .thumbnails
     {
-        width: 27em;
+        width: auto;
         height: 15em;
     }
 
     .container1 .item2 .thumbnails
     {
-        width: 33em;
+        width: auto;
         height: 15em;
         position: relative;
     }
@@ -479,7 +491,7 @@ footer
     .caption
     {
         position: absolute;
-        left: 40%
+        left: 40%;
     }
 
     .container1 .item2 img
@@ -533,7 +545,6 @@ footer
     .filters
     {
         margin-left: 0em;
-        width: 57%;
         line-height: 4em;
         font-size: 1.7em;
     }
@@ -551,7 +562,42 @@ footer
     {
         width: 20%;
     }
+
+    span.filter-title
+    {
+        display: flex;
+    }
+
+    body
+    {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    .logo-menu nav ul
+    {
+        display: inline-block;
+    }
+
+    .search
+    {
+        display: none;
+    }
+    .search-cell
+    {
+        display: inline-block;
+        background-color: #0065FC;
+        color: #FFFFFF;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 0em 0.5em 0.5em 0em;
+    }
+
+    .container1 .item1
+    {
+        background: transparent;
+    }
   }
+
 
 /*
   @media only screen and (orientation: landscape) {
