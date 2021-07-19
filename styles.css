@@ -632,7 +632,7 @@ footer
 
 
 
-  @media only screen and (max-width: 991px) and (orientation: landscape) {
+  @media only screen and (max-width: 1200px) and (orientation: landscape) {
     body
     {
         padding-left: 5em;
