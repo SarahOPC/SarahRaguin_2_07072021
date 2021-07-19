@@ -47,7 +47,7 @@ nav p /* mise en gras du bouton inscrire*/
     font-weight: bold;
 }
 
-.logo-menu nav ul li:hover:focus /*mise en forme boutons hébergements et activités au clic*/
+.logo-menu nav ul li a:hover, .logo-menu nav ul li a:active, .logo-menu nav ul li a:focus /*mise en forme boutons hébergements et activités au clic*/
 {
     color:#0065FC;
     border: solid 0.2em transparent;
