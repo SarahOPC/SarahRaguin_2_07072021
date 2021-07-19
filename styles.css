@@ -4,6 +4,16 @@
     font-family: Raleway-Bold, Arial, Verdana, sans-serif;
     background-color: transparent;
 }
+
+.bigscreen, .tablet, .cellphone
+{
+    display: none;
+}
+
+.desktop
+{
+    display: block;
+}
 /*######################################################################################################################*/
 /* Mise en forme du menu */
 
@@ -436,6 +446,18 @@ footer
 
 /* Media Queries - Téléphone portable - < 768 px */
 
+@media screen and (max-width: 768px){
+    .desktop, .bigscreen, .tablet
+    {
+        display: none;
+    }
+
+    .cellphone
+    {
+        display: block;
+    }
+    
+}
 
 /*######################################################################################################################*/
 
@@ -446,6 +468,16 @@ footer
     {
         font-size: 1.1em;
         flex-direction: column;
+    }
+
+    .desktop, .bigscreen, .cellphone
+    {
+        display: none;
+    }
+
+    .tablet
+    {
+        display: block;
     }
     
     header h1
@@ -599,21 +631,56 @@ footer
   }
 
 
-/*
-  @media only screen and (orientation: landscape) {
-    {
 
+  @media only screen and (orientation: landscape) {
+    body
+    {
+        padding-left: 5em;
+    }
+    
+    .container1
+    {
+        flex-direction: column-reverse;
+    }
+
+    .container1 .item2
+    {
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container1 .item1 .thumbnails
+    {
+        padding-right: 5em;
+    }
+
+    .container-footer
+    {
+        background-color: #FFFFFF;
+    }
+
+    .filters
+    {
+        margin-left: auto;
     }
   }
 
 
 /*######################################################################################################################*/
 
-/* Media Queries - Grands écrans - > 1200 px *
+/* Media Queries - Grands écrans - > 1200 px */
 
 @media screen and (min-width: 1200px) {
+    .desktop, .cellphone, .tablet
     {
+        display: none;
+    }
 
+    .bigscreen
+    {
+        display: block;
     }
   }
+  
 /* Fin Media Queries */
