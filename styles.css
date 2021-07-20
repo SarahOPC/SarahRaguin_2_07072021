@@ -1,7 +1,7 @@
 *
 {
     font-size: 0.95em;
-    font-family: "Raleway", Arial, Verdana, sans-serif;
+    font-family: "Raleway", "Raleway Bold", Arial, Verdana, sans-serif;
     background-color: transparent;
     font-weight: bold;
 }
@@ -375,7 +375,7 @@ span.title-p
 
 .container2 p
 {
-    font-family: "Raleway-Bold";
+    font-family: "Raleway Bold 700";
 }
 
 .container2 .item1
@@ -441,6 +441,11 @@ footer
 .second-item, .third-item
 {
     width: 33%;
+}
+
+.container-footer h3
+{
+    font-family: "Raleway Bold";
 }
 
 
