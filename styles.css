@@ -334,7 +334,7 @@ img
 
 span.title-p
 {
-    font-weight: bolder;
+    font-family: "Raleway-Bold";
 }
 /* Fin vignettes contenants les photos */
 
@@ -375,7 +375,7 @@ span.title-p
 
 .container2 p
 {
-    font-weight: bolder;
+    font-family: "Raleway-Bold";
 }
 
 .container2 .item1
@@ -401,6 +401,7 @@ span.title-p
 
 .title
 {
+    font-family: "Raleway-Bold";
     font-size: large;
     margin-top: 4em;
     margin-bottom: 1em;
