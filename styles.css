@@ -1,8 +1,9 @@
 *
 {
     font-size: 0.95em;
-    font-family: Raleway-Bold, Arial, Verdana, sans-serif;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
     background-color: transparent;
+    font-weight: bold;
 }
 
 .bigscreen, .tablet, .cellphone
@@ -149,7 +150,6 @@ a.fas:hover /* lien survolé */
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    margin-left: -47em;
     margin-bottom: 1.5em;
 }
 
@@ -256,7 +256,7 @@ img
 {
     margin-left: 1em;
     font-family: Raleway-Bold;
-    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .container1 .item1-item1, .container1 .item1-item2
@@ -334,7 +334,7 @@ img
 
 span.title-p
 {
-    font-weight: bold;
+    font-weight: bolder;
 }
 /* Fin vignettes contenants les photos */
 
@@ -375,7 +375,7 @@ span.title-p
 
 .container2 p
 {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .container2 .item1
