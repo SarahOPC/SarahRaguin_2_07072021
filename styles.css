@@ -679,6 +679,7 @@ footer
     {
         background-color: #FFFFFF;
         flex-direction: row;
+        display: flex;
     }
 
     .container1 .item1 .thumbnails
