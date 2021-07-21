@@ -200,7 +200,7 @@ img
 
 /* Mise en forme du container 1 - Hébergement et populaire */
 
-.container1
+.container-accomodation
 {
     display: flex;
     flex-wrap: nowrap;
@@ -220,14 +220,14 @@ img
 }
 /* Fin Mise en forme des étoiles*/
 
-.container1 p
+.container-accomodation p
 {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     border-radius: 1em;
 }
 
-.container1 h2
+.container-accomodation h2
 {
     font-size: large;
     font-weight: bold;
@@ -236,7 +236,7 @@ img
 
 /* Mise en forme de la partie hébergement */
 
-.container1 .item1
+.container-accomodation .item-left
 {
     flex-basis: 60%;
     background-color: #f2f2f2;
@@ -259,7 +259,7 @@ img
     font-size: 1.5em;
 }
 
-.container1 .item1-item1, .container1 .item1-item2
+.container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
 {
     display: flex;
     flex-wrap: nowrap;
@@ -270,7 +270,7 @@ img
 
 /* Mise en forme de la partie populaire */
 
-.container1 .item2
+.container-accomodation .item-pop
 {
     flex-basis: 25%;
     background-color: #f2f2f2;
@@ -299,7 +299,7 @@ img
 
 /* vignettes contenants les photos dans populaire */
 
-.container1 .item2 .thumbnails
+.container-accomodation .item-pop .thumbnails
 {
     width: 22em;
     display: flex;
@@ -308,7 +308,7 @@ img
     
 }
 
-.container1 .item2 img
+.container-accomodation .item-pop img
 {
     max-height: 100%;
     float: left;
@@ -320,7 +320,7 @@ img
     min-width: 10em;
 }
 
-.container1 .item2 p, .container1 .item2 .star
+.container-accomodation .item-pop p, .container-accomodation .item-pop .star
 {
     float: right;
 }
@@ -342,58 +342,58 @@ span.title-p
 
 /*######################################################################################################################*/
 
-/* Mise en forme du container2 - Activités */
+/* Mise en forme du container-activities - Activités */
 
-.container2
+.container-activities
 {
     display: flex;
     justify-content: space-evenly;
 }
 
-.container2 .item1, .container2 .item2
+.container-activities .item-left, .container-activities .item-right
 {
     display: flex;
     justify-content: space-evenly;
 }
 
-.container2 .item1-item1, .container2 .item1-item2
+.container-activities .item-left-item-big, .container-activities .item-left-item-small
 {
     display: flex;
     justify-content: space-evenly;
 }
 
-.container2 .item2-item1, .container2 .item2-item2
+.container-activities .item-right-item-big, .container-activities .item-right-item-small
 {
     display: flex;
     justify-content: space-evenly;
 }
 
-.container2 .item1-item2, .container2 .item2-item2
+.container-activities .item-left-item-small, .container-activities .item-right-item-small
 {
     flex-direction: column;
 }
 
-.container2 p
+.container-activities p
 {
     font-family: "Raleway Bold 700";
 }
 
-.container2 .item1
+.container-activities .item-left
 {
     float: left;
 }
 
-.container2 .item1-item1 img, .container2 .item2-item1 img
+.container-activities .item-left-item-big img, .container-activities .item-right-item-big img
 {
     height: 24.5em;
 }
 
-.container2 .item1-item1 .thumbnails, .container2 .item2-item1 .thumbnails
+.container-activities .item-left-item-big .thumbnails, .container-activities .item-right-item-big .thumbnails
 {
     height: 27em;
 }
 
-.container2 .item1-item2 .thumbnails, .container2 .item2-item2 .thumbnails
+.container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-small .thumbnails
 {
     width: 20em;
 }
@@ -408,7 +408,7 @@ span.title-p
     margin-left: 2em;
 }
 
-/* Fin Mise en forme du container2 - Activités */
+/* Fin Mise en forme du container-activities - Activités */
 
 /*######################################################################################################################*/
 
@@ -468,11 +468,7 @@ footer
     .cellphone
     {
         display: block;
-    }
-
-    /*.logo-menu, header h1, .research, .filters, .popular1, .container1 .item2*/
-    
-    
+    }    
 }
 
 /*######################################################################################################################*/
@@ -503,7 +499,7 @@ footer
         margin-top: 2em;
     }
 
-    .container1
+    .container-accomodation
     {
         flex-direction: column-reverse;
         flex-wrap: nowrap;
@@ -530,14 +526,14 @@ footer
         height: 15em;
     }
 
-    .container1 .item2 .thumbnails
+    .container-accomodation .item-pop .thumbnails
     {
         display: block;
         width: auto;
         height: 15em;
     }
 
-    .container1 .item1 .thumbnails
+    .container-accomodation .item-left .thumbnails
     {
         padding-right: initial;
     }
@@ -547,24 +543,24 @@ footer
         left: 50%;
     }
 
-    .container1 .item2 img
+    .container-accomodation .item-pop img
     {
         height: fit-content;
     }
 
-    .container2 .item1-item1 img, .container2 .item2-item1 img
+    .container-activities .item-left-item-big img, .container-activities .item-right-item-big img
     {
         height: inherit;
     }
 
-    .container2 .item1-item1 .thumbnails, .container2 .item2-item1 .thumbnails
+    .container-activities .item-left-item-big .thumbnails, .container-activities .item-right-item-big .thumbnails
     {
         height: 15em;
         width: auto;
         padding-bottom: 7em;
     }
 
-    .container2 .item1-item2 .thumbnails, .container2 .item2-item2 .thumbnails
+    .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-small .thumbnails
     {
         width: auto;
         height: 15em;
@@ -584,7 +580,7 @@ footer
         font-size: 2.2em;
     }
 
-    .container1 h2
+    .container-accomodation h2
     {
         font-size: 2.2em;
     }
@@ -654,7 +650,7 @@ footer
         border-radius: 0em 0.5em 0.5em 0em;
     }
 
-    .container1 .item1
+    .container-accomodation .item-left
     {
         background: transparent;
     }
@@ -670,19 +666,19 @@ footer
         padding-right: 2em;
     }
     
-    .container1
+    .container-accomodation
     {
         flex-direction: column-reverse;
     }
 
-    .container1 .item2
+    .container-accomodation .item-pop
     {
         background-color: #FFFFFF;
         flex-direction: row;
         display: flex;
     }
 
-    .container1 .item1 .thumbnails
+    .container-accomodation .item-left .thumbnails
     {
         margin-right: 2em;
     }
@@ -712,13 +708,13 @@ footer
         display: none;
     }
 
-    .container2
+    .container-activities
     {
         margin-left: 2em;
         margin-right: 7em;
     }
 
-    .container1 .item1-item1, .container1 .item1-item2
+    .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
     {
         justify-content: space-evenly;
     }
