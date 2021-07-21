@@ -332,7 +332,7 @@ img
     flex-wrap: nowrap;
 }
 
-span.title-p
+.title-p
 {
     font-family: "Raleway-Bold";
 }
@@ -621,7 +621,7 @@ footer
         width: 20%;
     }
 
-    span.filter-title
+    .filter-title
     {
         display: flex;
     }
