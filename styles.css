@@ -12,7 +12,7 @@
 
 .logo-menu/*séparation du logo et du menu de navigation*/
 {
-    font-family: "Raleway", "Raleway Bold", Arial, Verdana, sans-serif;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ nav p /* mise en gras du bouton inscrire*/
 
 .research, h1, .filters, header h2
 {
-    font-family: "Raleway", "Raleway Bold", Arial, Verdana, sans-serif;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
     background-color: transparent;
 }
 
@@ -64,12 +64,12 @@ header h2
 
 a.fas
 {
-    font-family: "Raleway", "Raleway Bold", Arial, Verdana, sans-serif;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 
 h4
 {
-    font-family: "Raleway", "Raleway Bold", Arial, Verdana, sans-serif;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
     display: inline-flex;
 }
 /* Fin de la mise en forme du menu*/
@@ -96,6 +96,7 @@ input /*mise en forme du champ de saisie*/
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-color: transparent;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 
 .search /*mise en forme bouton rechercher*/
@@ -116,6 +117,12 @@ p a /*mise en forme de tout le paragraphe de recherche de villes */
     display: none;
 }
 
+.research
+{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
 /* Fin Mise en forme premier paragraphe et recherche */
 
 /*######################################################################################################################*/
@@ -124,12 +131,13 @@ p a /*mise en forme de tout le paragraphe de recherche de villes */
 
 a.fas /* lien non survolé */
 {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #000000;
     transition: 2s ease-out;
     padding: 0.7em 1.5em 0.7em 0em;
     border-radius: 1.5em 1.5em 1.5em 1.5em;
     border: solid #f2f2f2;
+    margin-left: 1.5em;
 }
 
 a.fas:hover /* lien survolé */
@@ -165,9 +173,11 @@ a.fas:hover /* lien survolé */
 .filters
 {
     display: flex;
-    justify-content: space-evenly;
     position: relative;
     margin-bottom: 1.5em;
+    margin-left: 0em;
+    align-items: baseline;
+    justify-content: left;
 }
 .filter-title
 {
@@ -197,8 +207,8 @@ a.fas:hover /* lien survolé */
 
 .thumbnails /* vignettes avec les photos */
 {
-    width: 17em;
-    height: 12em;
+    width: 13em;
+    height: 8em;
     box-shadow: 0.3em 0.3em 0.3em #6d6d6d;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -207,6 +217,7 @@ a.fas:hover /* lien survolé */
     background-color: #FFFFFF;
     border-radius: 1em;
     padding: 0.3em 0.3em 2.5em 0.3em;
+    font-size: small;
 }
 
 img
@@ -225,8 +236,8 @@ img
 {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
     margin-top: 2em;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 
 /* Mise en forme des étoiles*/
@@ -237,7 +248,12 @@ img
 }
 .unchecked /*étoiles grises*/
 {
-    color: #6d6d6d;
+    color: #cfcfcf;
+}
+
+.fa-star
+{
+    font-size: 0.8em;
 }
 /* Fin Mise en forme des étoiles*/
 
@@ -257,7 +273,7 @@ a:link
 {
     font-size: large;
     font-weight: bold;
-    font-family: Raleway-Bold;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 
 /* Mise en forme de la partie hébergement */
@@ -266,11 +282,13 @@ a:link
 {
     flex-basis: 60%;
     background-color: #f2f2f2;
-    border-radius: 1em;
+    border-radius: 1em 1em 0em 0em;
     padding-top: 3em;
     height: fit-content;
     padding-right: 1.5em;
     padding-left: 1.5em;
+    justify-content: space-around;
+    margin-right: 2em;
 }
 
 .show /* Espace sous Afficher plus */
@@ -281,8 +299,8 @@ a:link
 #show-more /*Afficher plus */
 {
     margin-left: 1em;
-    font-family: Raleway-Bold;
-    font-size: 1.5em;
+    font-family: "Raleway", Arial, Verdana, sans-serif;
+    font-size: 1em;
 }
 
 .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
@@ -300,7 +318,7 @@ a:link
 {
     flex-basis: 25%;
     background-color: #f2f2f2;
-    border-radius: 1em;
+    border-radius: 1em 1em 0em 0em;
     flex-direction: column;
     padding-top: 3em;
     padding-right: 1.5em;
@@ -360,7 +378,7 @@ a:link
 
 .title-p
 {
-    font-family: "Raleway-Bold";
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 /* Fin vignettes contenants les photos */
 
@@ -401,7 +419,7 @@ a:link
 
 .container-activities p
 {
-    font-family: "Raleway Bold 700";
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 
 a:link
@@ -432,7 +450,7 @@ a:link
 
 .title
 {
-    font-family: "Raleway-Bold";
+    font-family: "Raleway", Arial, Verdana, sans-serif;
     font-size: large;
     margin-top: 4em;
     margin-bottom: 1em;
@@ -476,7 +494,7 @@ footer
 
 .container-footer h3
 {
-    font-family: "Raleway Bold";
+    font-family: "Raleway", Arial, Verdana, sans-serif;
 }
 
 
@@ -489,7 +507,7 @@ footer
 /*######################################################################################################################*/
 
 /* Media Queries - Téléphone portable - < 768 px */
-
+/*
 @media screen and (max-width: 768px){
     .desktop, .bigscreen, .tablet
     {
@@ -505,7 +523,7 @@ footer
 /*######################################################################################################################*/
 
 /* Media Queries - Téléphone et tablette - < ou = 991 px */
-
+/*
 @media screen and (max-width: 991px) {
     *
     {
@@ -767,7 +785,7 @@ footer
 /*######################################################################################################################*/
 
 /* Media Queries - Grands écrans - > 1200 px */
-
+/*
 @media screen and (min-width: 1200px) {
     .desktop, .cellphone, .tablet
     {
