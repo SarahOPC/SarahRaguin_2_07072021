@@ -833,7 +833,13 @@ footer
 /*######################################################################################################################*/
 
   @media only screen and (max-width: 1200px) and (orientation: landscape) {
-       .container-accomodation
+
+    body
+    {
+        display: inline-block;
+    }
+
+    .container-accomodation
     {
         flex-direction: column-reverse;
     }
@@ -843,6 +849,7 @@ footer
         background-color: #FFFFFF;
         flex-direction: row;
         display: flex;
+        justify-content: space-around;
     }
 
     .container-accomodation .item-left .thumbnails
@@ -878,7 +885,6 @@ footer
     .container-activities
     {
         margin-left: 2em;
-        margin-right: 7em;
     }
 
     .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
@@ -886,16 +892,21 @@ footer
         justify-content: space-evenly;
     }
 
-    header
-    {
-        
-    }
-
     .research
     {
         font-size: large;
         margin-top: 3em;
         margin-bottom: 3em;
+    }
+
+    nav
+    {
+        font-size: larger;
+    }
+
+    .container-footer
+    {
+        text-align: center;
     }
   }
 
