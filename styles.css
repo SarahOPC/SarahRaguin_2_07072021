@@ -530,7 +530,7 @@ footer
 /*######################################################################################################################*/
 
 /* Media Queries - Téléphone portable - < 768 px */
-/*
+
 @media screen and (max-width: 768px){
     .desktop, .bigscreen, .tablet
     {
@@ -546,7 +546,7 @@ footer
 /*######################################################################################################################*/
 
 /* Media Queries - Téléphone et tablette - < ou = 991 px */
-/*
+
 @media screen and (max-width: 991px) {
     *
     {
@@ -564,127 +564,47 @@ footer
         display: block;
     }
     
-    header h1
+    .logo-menu nav ul li a:hover, .logo-menu nav ul li a:active, .logo-menu nav ul li a:focus /*mise en forme boutons hébergements et activités au clic*/
     {
-        
-        margin-right: 7em;
-        margin-top: 2em;
+    color:#0065FC;
+    border: solid 0.2em transparent;
+    border-bottom-color: #0065FC;
+    padding-top: 1em;
     }
 
-    .container-accomodation
+    .logo-menu nav
     {
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
+        align-items: center;
+        padding-left: 3em;
     }
-
+    
     .logo-menu nav ul li
     {
         display: inline;
     }
-
-    .first-item
+    
+    .logo-menu nav ul
     {
-        margin-left: 0em;
-    }
-
-    .container-footer
-    {
-        margin-left: 2em;
-    }
-
-    .thumbnails
-    {
-        width: auto;
-        height: 15em;
-    }
-
-    .container-accomodation .item-pop .thumbnails
-    {
-        display: block;
-        width: auto;
-        height: 15em;
-    }
-
-    .container-accomodation .item-left .thumbnails
-    {
-        padding-right: initial;
+        display: inline-block;
     }
     
-    .caption
+    .logo-menu img
     {
-        left: 50%;
+        width: 20%;
     }
-
-    .container-accomodation .item-pop img
+    
+    header h1
     {
-        height: fit-content;
-    }
-
-    .container-activities .item-left-item-big img, .container-activities .item-right-item-big img
-    {
-        height: inherit;
-    }
-
-    .container-activities .item-left-item-big .thumbnails, .container-activities .item-right-item-big .thumbnails
-    {
-        height: 15em;
-        width: auto;
-        padding-bottom: 7em;
-    }
-
-    .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-small .thumbnails
-    {
-        width: auto;
-        height: 15em;
-        padding-bottom: 1em;
-    }
-
-    .title
-    {
-        font-size: 1.8em;
-        margin-left: 1.5em;
         margin-top: 2em;
-        margin-bottom: 2em;
+        font-size: 2.7em;
+        text-align: center;
+        margin-bottom: 1em;
     }
 
-    #show-more
+    header h2
     {
-        font-size: 2.2em;
+        text-align: center;
     }
-
-    .container-accomodation h2
-    {
-        font-size: 2.2em;
-    }
-
-    .popular1
-    {
-        display: flex;
-        flex-direction: row;
-        font-size: 2em;
-        margin-top: 2em;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .popular
-    {
-        display: none;
-    }
-
-    .filters
-    {
-        margin-left: 0em;
-        line-height: 4em;
-        font-size: 1.7em;
-        padding-bottom: 2em;
-    }
-
-    a.fas
-    {
-        padding-bottom: 1.5em;
-    }
-
     nav p
     {
         position: absolute;
@@ -694,19 +614,12 @@ footer
         margin-right: 1.5em;
     }
 
-    .logo-menu img
+    .research
     {
-        width: 20%;
-    }
-
-    .filter-title
-    {
-        display: flex;
-    }
-
-    .logo-menu nav ul
-    {
-        display: inline-block;
+        font-size: 2.3em;
+        margin-top: 3.5em;
+        margin-bottom: 1.5em;
+        text-align: center;
     }
 
     .search
@@ -722,20 +635,202 @@ footer
         border-radius: 0em 0.5em 0.5em 0em;
     }
 
+    .filters
+    {
+        margin-left: 0em;
+        line-height: 4em;
+        font-size: 1.7em;
+        padding-bottom: 2em;
+    }
+
+    a.fas
+    {
+        padding-bottom: 1.5em;
+    }
+
+    .filter-title
+    {
+        display: flex;
+        margin-left: 1.5em;
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
+    h4
+    {
+        font-size: 1.9em;
+    }
+    
+    .thumbnails
+    {
+        width: auto;
+        height: 15em;
+        border: 0.5em solid #FFFFFF;
+        border-radius: 5em;
+
+    }
+    
+    .container-accomodation
+    {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .container-accomodation h2
+    {
+        font-size: 2.2em;
+    }
+
+    .container-accomodation .item-pop .thumbnails
+    {
+        display: block;
+        width: auto;
+        height: 25em;
+    }
+
+    .container-accomodation .item-pop .thumbnails .caption .star
+    {
+        margin-top: 2em;
+    }
+
+    .container-accomodation .item-pop img
+    {
+        height: 25em;
+        width: 23em;
+        border-radius : 5em 0em 0em 5em;
+    }
+
+    .container-accomodation .item-pop .thumbnails b
+    {
+        font-size: 1.5em;
+    }
+    
+    .container-accomodation .item-pop .thumbnails p
+    {
+        font-size: 1.3em;
+    }
+    
+    .container-accomodation .item-pop
+    {
+        border-radius: 0em 0em 0em 0em;
+        background-color: #f2f2f2;
+        margin-block: -2em;
+    }
+        
+    .caption
+    {
+        left: 50%;
+        font-size: 2.2em;
+        padding-left: 1.7em;
+    }
+
+    .popular1
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 3em;
+        margin-top: 2em;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1em 1em 0em 0em;
+    }
+
+    .popular
+    {
+        display: none;
+    }
+
+    .container-accomodation .item-left .thumbnails
+    {
+        padding-right: initial;
+        height: fit-content;
+        width: fit-content;
+    }
+
     .container-accomodation .item-left
     {
         background: transparent;
     }
 
-    .research
+    .container-accomodation .item-left .thumbnails .title-p
     {
-        font-size: xx-large;
-        margin-top: 3.5em;
-        margin-bottom: 1.5em;
+        font-size: 3.5em;
+    }
+
+    .container-accomodation .item-left .thumbnails p
+    {
+        font-size: 3em;
+    }
+
+    .container-accomodation .item-left .thumbnails .star
+    {
+        font-size: 3em;
+    }
+
+    .container-accomodation .item-left img
+    {
+        height: 20em;
+        width: 61em;
+        border-radius: 5em 5em 0em 0em;
+    }
+
+    #show-more
+    {
+        font-size: 2.2em;
+    }
+    
+    .title
+    {
+        font-size: 1.8em;
+        margin-left: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .container-activities .item-left-item-big img, .container-activities .item-right-item-big img
+    {
+        height: inherit;
+    }
+
+    .container-activities .item-left .thumbnails, .container-activities .item-right .thumbnails
+    {
+        width: fit-content;
+        height: 35em;
+        padding-bottom: 0em;
+    }
+
+    .container-activities .item-left img, .container-activities .item-right img
+    {
+        width: 61em;
+        height: 20em;
+        border-radius: 5em 5em 0em 0em;
+
+    }
+
+    .container-activities .item-left p, .container-activities .item-right p
+    {
+        font-size: 3em;
+        padding-top: 0.5em;
+    }
+    
+    .container-footer
+    {
+        font-size: 1.5em;
+    }
+    
+    .container-footer p
+    {
+        width: max-content;
+    }
+    
+    .first-item, .second-item, .third-item
+    {
+        margin-left: 2em;
     }
   }
 
-
+/*######################################################################################################################*/
 
   @media only screen and (max-width: 1200px) and (orientation: landscape) {
        .container-accomodation
@@ -808,7 +903,7 @@ footer
 /*######################################################################################################################*/
 
 /* Media Queries - Grands écrans - > 1200 px */
-/*
+
 @media screen and (min-width: 1200px) {
     .desktop, .cellphone, .tablet
     {
