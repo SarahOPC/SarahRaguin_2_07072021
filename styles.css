@@ -28,7 +28,7 @@ nav p /* mise en gras du bouton inscrire*/
     font-weight: bold;
 }
 
-nav ul>li a:hover, nav ul>li a:active, nav ul>li a:focus /*mise en forme boutons hébergements et activités au clic*/
+nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
 {
     color:#0065FC;
     border: solid 0.2em transparent;
@@ -466,32 +466,67 @@ footer
 /* Media Queries - Téléphone et tablette - < ou = 991 px */
 
 @media screen and (max-width: 991px) {
-    
-    nav ul>li a:hover, nav ul>li a:active, nav ul>li a:focus /*mise en forme boutons hébergements et activités au clic*/
+
+    body
     {
-    color:#0065FC;
-    border: solid 0.2em transparent;
-    border-bottom-color: #0065FC;
-    padding-top: 1em;
+        margin-left: 1.5em;
+        width: 100%;
     }
     
-    nav ul>li
+    nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
     {
+        color:#0065FC;
+        border: solid 0.2em transparent;
+        border-bottom-color: #0065FC;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-top-color: #FFFFFF;
     }
     
     nav ul
     {
+        position: relative;
+        top: 4em;
+        margin-bottom: 3em;
+        width: 100%;
+        border: solid 0.2em transparent;
+        border-bottom-color: #f2f2f2;
+        padding-bottom: 1em;
+        margin-left: 0em;
+    }
+
+    nav ul>li /* li dont le parent est ul */
+    {
+        width: 50%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    nav
+    {
+        font-size: 2.3em;
+        margin-right: 0em;
     }
     
     nav img
     {
         width: 20%;
+        align-self: baseline;
+        margin-top: 1em;
+        position: absolute;
+    }
+
+    nav p
+    {
+        position: absolute;
+        right: 0;
+        margin-top: 1.7em;
     }
     
     header h1
     {
         margin-top: 2em;
-        font-size: 2.7em;
+        font-size: 3.7em;
         text-align: center;
         margin-bottom: 1em;
     }
@@ -499,15 +534,12 @@ footer
     header h2
     {
         text-align: center;
-    }
-    nav p
-    {
-        
+        font-size: 1.8em;
     }
 
     .research
     {
-        font-size: 2.3em;
+        font-size: 2.6em;
         margin-top: 3.5em;
         text-align: center;
     }
@@ -516,6 +548,12 @@ footer
     {
         display: none;
     }
+
+    input
+    {
+        margin-left: 1em;
+    }
+
     .search-cell
     {
         display: inline-block;
@@ -527,28 +565,41 @@ footer
 
     .filters
     {
-        
-    }
-
-    a.fas
-    {
+        flex-direction: column;
     }
 
     .filter-title
     {
         margin-left: 1.5em;
+        margin-bottom: 1em;
+        font-size: 3em;
+    }
+
+    .filters>a.fas
+    {
+        font-size: 3em;
+    }
+
+    .filters+div /* div juste après .filters*/
+    {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .fa-info-circle::before
+    {
+        font-size: 3em;
     }
 
     h4
     {
-        font-size: 1.9em;
+        font-size: 2.9em;
     }
     
     .thumbnails
     {
         border: 0.5em solid #FFFFFF;
         border-radius: 5em;
-
     }
     
     .container-accomodation
@@ -558,7 +609,7 @@ footer
 
     .container-accomodation h2
     {
-        font-size: 2.2em;
+        font-size: 4em;
     }
 
     .container-accomodation .item-pop .thumbnails
@@ -568,7 +619,7 @@ footer
 
     .container-accomodation .item-pop .thumbnails .caption .star
     {
-        margin-top: 2em; /*a retravailler*/
+        margin-top: 3.7em;
     }
 
     .container-accomodation .item-pop img
@@ -577,14 +628,10 @@ footer
         width: 23em;
         border-radius : 5em 0em 0em 5em;
     }
-
-    .container-accomodation .item-pop .thumbnails b
-    {
-    }
     
     .container-accomodation .item-pop .thumbnails p
     {
-        font-size: 1.3em; /**/
+        font-size: 1.3em;
     }
     
     .container-accomodation .item-pop
@@ -592,6 +639,7 @@ footer
         border-radius: 0em 0em 0em 0em;
         background-color: #f2f2f2;
         margin-block: -2em;
+        margin-right: 1.5em;
     }
         
     .caption
@@ -611,6 +659,11 @@ footer
         border-radius: 1em 1em 0em 0em;
     }
 
+    .popular1 h2
+    {
+        margin-right: 2.5em;
+    }
+
     .popular
     {
         display: none;
@@ -622,11 +675,20 @@ footer
         width: fit-content;
     }
 
+    .container-accomodation .item-left p, .container-accomodation .item-left .star
+    {
+        margin-left: 1.1em;
+    }
+
     .container-accomodation .item-left
     {
         background: transparent;
     }
 
+    .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
+    {
+        flex-direction: column;
+    }
     .container-accomodation .item-left .thumbnails .title-p
     {
         font-size: 3.5em;
@@ -645,19 +707,19 @@ footer
     .container-accomodation .item-left img
     {
         height: 20em;
-        width: 61em;
+        width: 55em;
         border-radius: 5em 5em 0em 0em;
     }
 
     #show-more
     {
-        font-size: 2.2em; /**/
+        font-size: 2.7em;
     }
 
-    .container-activities .item-left-item-big img, .container-activities .item-right-item-big img
+    .container-activities h3
     {
+        font-size: 4em;
     }
-
     .container-activities .item-left .thumbnails, .container-activities .item-right .thumbnails
     {
         width: fit-content;
@@ -667,21 +729,27 @@ footer
 
     .container-activities .item-left img, .container-activities .item-right img
     {
-        width: 61em;
+        width: 55em;
         height: 20em;
         border-radius: 5em 5em 0em 0em;
-
     }
 
     .container-activities .item-left p, .container-activities .item-right p
     {
         font-size: 3em;
         padding-top: 0.5em;
+        margin-left: 1.1em;
+    }
+
+    .container-activities .item-left-item-big, .container-activities .item-right-item-big, .container-activities .item-left, .container-activities .item-right, .container-activities
+    {
+        flex-direction: column;
     }
     
     .container-footer
     {
-        font-size: 1.5em;
+        font-size: 2.5em;
+        flex-direction: column;
     }
     
     .container-footer p
@@ -692,6 +760,11 @@ footer
     .first-item, .second-item, .third-item
     {
         margin-left: 2em;
+    }
+
+    .container-footer h3
+    {
+        width: max-content;
     }
   }
 
