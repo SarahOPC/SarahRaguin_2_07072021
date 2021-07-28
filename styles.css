@@ -870,6 +870,37 @@ footer
 
 @media screen and (min-width: 1200px) {
     
+    .container-accomodation .item-left-item-up img, .container-accomodation .item-left-item-down img
+    {
+        width: 19em;
+        height: 10em;
+    }
+
+    .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
+    {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .container-accomodation .item-pop img
+    {
+        height: 11em;
+    }
+
+    .container-accomodation .item-pop .thumbnails
+    {
+        height: fit-content;
+    }
+
+    .container-activities .item-left-item-big img, .container-activities .item-left-item-small img, .container-activities .item-right-item-big img, .container-activities .item-right-item-small img
+    {
+        width: 20em;
+    }
+
+    .container-activities .item-left-item-big .thumbnails, .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-big .thumbnails, .container-activities .item-right-item-small .thumbnails
+    {
+        width: fit-content;
+    }
   }
 
 /* Fin Media Queries */
