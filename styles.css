@@ -455,15 +455,7 @@ footer
 
 /*######################################################################################################################*/
 
-/* Media Queries - Téléphone portable - < 768 px */
-
-@media screen and (max-width: 768px){
-    
-}
-
-/*######################################################################################################################*/
-
-/* Media Queries - Téléphone et tablette - < ou = 991 px */
+/* Media Queries - Téléphone - < ou = 991 px */
 
 @media screen and (max-width: 991px) {
 
@@ -483,6 +475,11 @@ footer
         border-top-color: #FFFFFF;
     }
     
+    nav ul>li a
+    {
+        margin: 0 auto;
+    }
+
     nav ul
     {
         position: relative;
@@ -499,7 +496,6 @@ footer
     {
         width: 50%;
         font-size: 1.2em;
-        text-align: center;
     }
 
     nav
@@ -770,6 +766,9 @@ footer
 
 /*######################################################################################################################*/
 
+/* Media Queries - Tablette - < ou = 1199 px */
+
+
   @media only screen and (max-width: 1200px) and (orientation: landscape) {
 
     body
@@ -894,12 +893,17 @@ footer
 
     .container-activities .item-left-item-big img, .container-activities .item-left-item-small img, .container-activities .item-right-item-big img, .container-activities .item-right-item-small img
     {
-        width: 20em;
+        width: 25em;
     }
 
     .container-activities .item-left-item-big .thumbnails, .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-big .thumbnails, .container-activities .item-right-item-small .thumbnails
     {
         width: fit-content;
+    }
+
+    .container-activities .item-left
+    {
+        margin-left: 1.5em;
     }
   }
 
