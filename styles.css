@@ -6,6 +6,7 @@ nav/*séparation du logo et du menu de navigation*/
     font-family: "Raleway", Arial, Verdana, sans-serif;
     display: flex;
     color: #0065FC;
+    padding-top: 1em;
 }
 
 nav ul /*Mise en forme du menu de navigation*/
@@ -33,7 +34,6 @@ nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébe
     color:#0065FC;
     border: solid 0.2em transparent;
     border-top-color: #0065FC;
-    padding-top: 1em;
 }
 
 .research, h1, .filters, header h2
@@ -329,9 +329,7 @@ a:link
 {
     border-radius: 1em 0em 0em 1em;
     margin-right: 0.5em;
-    width: 10em;
     height: 8em;
-    min-width: 10em;
 }
 
 .caption
@@ -621,7 +619,6 @@ footer
     .container-accomodation .item-pop img
     {
         height: 25em;
-        width: 23em;
         border-radius : 5em 0em 0em 5em;
     }
     
@@ -703,7 +700,6 @@ footer
     .container-accomodation .item-left img
     {
         height: 20em;
-        width: 55em;
         border-radius: 5em 5em 0em 0em;
     }
 
@@ -725,7 +721,6 @@ footer
 
     .container-activities .item-left img, .container-activities .item-right img
     {
-        width: 55em;
         height: 20em;
         border-radius: 5em 5em 0em 0em;
     }
@@ -766,10 +761,10 @@ footer
 
 /*######################################################################################################################*/
 
-/* Media Queries - Tablette - < ou = 1199 px */
+/* Media Queries - Tablette - < ou = 991 px */
 
 
-  @media only screen and (max-width: 1200px) and (orientation: landscape) {
+  @media only screen and (max-width: 991px) and (orientation: landscape) {
 
     body
     {
@@ -808,6 +803,7 @@ footer
     .container-accomodation
     {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     .popular1
@@ -871,13 +867,12 @@ footer
     
     .container-accomodation .item-left-item-up img, .container-accomodation .item-left-item-down img
     {
-        width: 19em;
         height: 10em;
     }
 
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
-        width: fit-content;
+        width: 15em;
         height: fit-content;
     }
 
@@ -889,11 +884,11 @@ footer
     .container-accomodation .item-pop .thumbnails
     {
         height: fit-content;
+        width: 15em;
     }
 
     .container-activities .item-left-item-big img, .container-activities .item-left-item-small img, .container-activities .item-right-item-big img, .container-activities .item-right-item-small img
     {
-        width: 25em;
     }
 
     .container-activities .item-left-item-big .thumbnails, .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-big .thumbnails, .container-activities .item-right-item-small .thumbnails
