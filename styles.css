@@ -65,6 +65,11 @@ h4
 }
 /* Fin de la mise en forme du menu*/
 
+body
+{
+    overflow-x: hidden;
+}
+
 /*######################################################################################################################*/
 
 /* Mise en forme premier paragraphe et recherche */
@@ -146,7 +151,7 @@ a.fas:hover /* lien survolé */
 
 .fa-money-bill-wave:before, .fa-dog:before, .fa-heart:before, .fa-child:before
 {
-    padding: 0.6em;
+    padding: 0.7em;
     background-color: #deebff;
     border-radius: 1.2em;
     color: #0065FC;
@@ -322,6 +327,7 @@ a:link
     display: flex;
     padding: 0.3em;
     margin-bottom: 2em;
+    padding-right: 10em;
     
 }
 
@@ -336,6 +342,7 @@ a:link
 {
     display: flex;
     flex-direction: column;
+    min-width: fit-content;
 }
 
 .item-pop .thumbnails .caption .star
@@ -499,22 +506,23 @@ footer
     nav
     {
         font-size: 2.3em;
-        margin-right: 0em;
     }
     
     nav img
     {
-        width: 20%;
+        width: 23%;
         align-self: baseline;
         margin-top: 1em;
         position: absolute;
+        margin-left: 1em;
     }
 
     nav p
     {
         position: absolute;
         right: 0;
-        margin-top: 1.7em;
+        margin-top: 1.9em;
+        margin-right: 1em;
     }
     
     header h1
@@ -606,20 +614,23 @@ footer
         font-size: 4em;
     }
 
-    .container-accomodation .item-pop .thumbnails
-    {
-        height: 25em;
-    }
-
     .container-accomodation .item-pop .thumbnails .caption .star
     {
         margin-top: 3.7em;
     }
-
+    
     .container-accomodation .item-pop img
     {
-        height: 25em;
+        height: auto;
+        object-fit: cover;
         border-radius : 5em 0em 0em 5em;
+    }
+
+    .container-accomodation .item-pop .thumbnails
+    {
+        height: 19em;
+        width: 19em;
+        padding-right: 31em;
     }
     
     .container-accomodation .item-pop .thumbnails p
@@ -637,8 +648,20 @@ footer
         
     .caption
     {
-        font-size: 2.2em;
+        font-size: 1.8em;
         padding-left: 1.5em;
+        min-width: max-content;
+
+    }
+
+    .container-accomodation .item-pop .thumbnails:nth-child(even) .caption p:nth-child(even)
+    {
+        font-size: 1.3em;
+    }
+
+    .container-accomodation .item-pop .thumbnails:nth-child(odd) .star
+    {
+        margin-top: 2em;
     }
 
     .popular1
@@ -665,7 +688,7 @@ footer
     .container-accomodation .item-left .thumbnails
     {
         height: fit-content;
-        width: fit-content;
+        width: 53em;
     }
 
     .container-accomodation .item-left p, .container-accomodation .item-left .star
@@ -714,7 +737,7 @@ footer
     }
     .container-activities .item-left .thumbnails, .container-activities .item-right .thumbnails
     {
-        width: fit-content;
+        width: 54em;
         height: 35em;
         padding-bottom: 0em;
     }
@@ -761,21 +784,21 @@ footer
 
 /*######################################################################################################################*/
 
-/* Media Queries - Tablette - < ou = 991 px */
+/* Media Queries - Tablette - < ou = 1199 px */
 
 
-  @media only screen and (max-width: 991px) and (orientation: landscape) {
+  @media only screen and (max-width: 1199px) and (orientation: landscape) {
 
     body
     {
         display: inline-block;
-        margin-left: 3em;
-        margin-right: 3em;
     }
     
     nav
     {
         font-size: 1.5em;
+        margin-right: 1em;
+        margin-left: 1em;
     }
 
     header h2
@@ -831,6 +854,23 @@ footer
         justify-content: space-around;
     }
 
+    .container-accomodation .item-pop img
+    {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .container-accomodation .item-pop .thumbnails
+    {
+        height: 9em;
+        width: 9em;
+    }
+
+    .container-accomodation .item-pop .thumbnails:nth-child(odd) .caption p:nth-child(even)
+    {
+        font-size: 1.1em;
+    }
+
     .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
     {
         justify-content: space-evenly;
@@ -873,27 +913,24 @@ footer
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
         width: 15em;
-        height: fit-content;
+        height: 13em;
     }
 
     .container-accomodation .item-pop img
     {
-        height: 11em;
+        height: auto;
+        object-fit: cover;
     }
 
     .container-accomodation .item-pop .thumbnails
     {
-        height: fit-content;
-        width: 15em;
-    }
-
-    .container-activities .item-left-item-big img, .container-activities .item-left-item-small img, .container-activities .item-right-item-big img, .container-activities .item-right-item-small img
-    {
+        height: 9em;
+        width: 9em;
     }
 
     .container-activities .item-left-item-big .thumbnails, .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-big .thumbnails, .container-activities .item-right-item-small .thumbnails
     {
-        width: fit-content;
+        width: 18em;
     }
 
     .container-activities .item-left
