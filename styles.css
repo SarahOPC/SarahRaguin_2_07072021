@@ -191,7 +191,6 @@ a.fas:hover /* lien survolé */
 
 .thumbnails /* vignettes avec les photos */
 {
-    width: 13em;
     height: 8em;
     box-shadow: 0.3em 0.3em 0.3em #6d6d6d;
     margin-left: 0.5em;
@@ -295,6 +294,7 @@ a:link
 
 .container-accomodation .item-pop
 {
+    flex-basis: 25%;
     background-color: #f2f2f2;
     border-radius: 1em 1em 0em 0em;
     padding-top: 3em;
@@ -367,11 +367,6 @@ a:link
     position: relative;
 }
 
-.container-activities .item-left, .container-activities .item-right
-{
-    display: flex;
-}
-
 .container-activities p
 {
     font-family: "Raleway", Arial, Verdana, sans-serif;
@@ -379,25 +374,17 @@ a:link
     font-weight: bold;
 }
 
-.container-activities .item-left-item-big img, .container-activities .item-right-item-big img
+.container-activities .item-big img
 {
     height: 23em;
 }
 
-.container-activities .item-left-item-big .thumbnails, .container-activities .item-right-item-big .thumbnails
+.container-activities .thumbnails
 {
     height: 24em;
-    width: 15em;
+    width: 25%;
     box-shadow: 0.1em 0.3em 0.3em #6d6d6d;
-}
-
-.container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-small .thumbnails
-{
-    width: 17em;
-    height: 12.5em;
     padding-bottom: inherit;
-    box-shadow: 0.1em 0.3em 0.3em #6d6d6d;
-
 }
 
 .container-activities h3
@@ -410,7 +397,7 @@ a:link
     margin-left: 1em;
 }
 
-.container-activities .item-left-item-big .thumbnails, .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-big .thumbnails, .container-activities .item-right-item-small .thumbnails
+.container-activities .item-big .thumbnails, .container-activities .item-small .thumbnails
 {
     margin-right: 2em;
 }
@@ -432,6 +419,7 @@ footer
 .container-footer
 {
     display: flex;
+    flex-direction: row;
 }
 
 .container-footer p
@@ -448,6 +436,7 @@ footer
 .second-item, .third-item
 {
     width: 33%;
+    margin-left: 3em;
 }
 
 /* Fin mise en forme du footer */
@@ -460,7 +449,7 @@ footer
 
 /* Media Queries - Téléphone - < ou = 991 px */
 
-@media screen and (max-width: 991px) {
+@media all and (max-width: 991px) {
 
     body
     {
@@ -686,7 +675,7 @@ footer
     .container-accomodation .item-left .thumbnails
     {
         height: fit-content;
-        width: 53em;
+        width: 100%;
     }
 
     .container-accomodation .item-left p, .container-accomodation .item-left .star
@@ -733,27 +722,27 @@ footer
     {
         font-size: 4em;
     }
-    .container-activities .item-left .thumbnails, .container-activities .item-right .thumbnails
+    .container-activities .thumbnails
     {
-        width: 54em;
+        width: 100%;
         height: 35em;
         padding-bottom: 0em;
     }
 
-    .container-activities .item-left img, .container-activities .item-right img
+    .container-activities img
     {
         height: 20em;
         border-radius: 5em 5em 0em 0em;
     }
 
-    .container-activities .item-left p, .container-activities .item-right p
+    .container-activities p
     {
         font-size: 3em;
         padding-top: 0.5em;
         margin-left: 1.1em;
     }
 
-    .container-activities .item-left-item-big, .container-activities .item-right-item-big, .container-activities .item-left, .container-activities .item-right, .container-activities
+    .container-activities
     {
         flex-direction: column;
     }
@@ -785,7 +774,7 @@ footer
 /* Media Queries - Tablette - < ou = 1199 px */
 
 
-  @media only screen and (max-width: 1199px) and (orientation: landscape) {
+  @media all and (max-width: 1199px) and (orientation: landscape) {
 
     body
     {
@@ -901,7 +890,7 @@ footer
 
 /* Media Queries - Grands écrans - > 1200 px */
 
-@media screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
     
     .container-accomodation .item-left-item-up img, .container-accomodation .item-left-item-down img
     {
@@ -926,12 +915,12 @@ footer
         width: 9em;
     }
 
-    .container-activities .item-left-item-big .thumbnails, .container-activities .item-left-item-small .thumbnails, .container-activities .item-right-item-big .thumbnails, .container-activities .item-right-item-small .thumbnails
+    .container-activities .item-big .thumbnails, .container-activities .item-small .thumbnails
     {
-        width: 18em;
+        width: 25%;
     }
 
-    .container-activities .item-left
+    .container-activities
     {
         margin-left: 1.5em;
     }
