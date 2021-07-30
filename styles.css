@@ -475,9 +475,9 @@ footer
         color:#0065FC;
         border: solid 0.2em transparent;
         border-bottom-color: #0065FC;
-        padding-top: 1em;
         padding-bottom: 1em;
         border-top-color: #FFFFFF;
+        align-items: baseline;
     }
     
     nav ul>li a
