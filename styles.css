@@ -477,14 +477,13 @@ footer
         border-bottom-color: #0065FC;
         padding-bottom: 1em;
         border-top-color: #FFFFFF;
-        align-items: baseline;
     }
     
     nav ul>li a
     {
         margin: 0 auto;
     }
-
+    
     nav ul
     {
         position: relative;
@@ -495,6 +494,7 @@ footer
         border-bottom-color: #f2f2f2;
         padding-bottom: 1em;
         margin-left: 0em;
+        align-items: baseline;
     }
 
     nav ul>li /* li dont le parent est ul */
