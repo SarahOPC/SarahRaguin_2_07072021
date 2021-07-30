@@ -132,7 +132,6 @@ a.fas /* lien non survolé */
 {
     /* text-decoration: none; */
     color: #000000;
-    transition: 2s ease-out;
     padding: 0.7em 1.5em 0.7em 0em;
     border-radius: 1.5em 1.5em 1.5em 1.5em;
     border: solid #f2f2f2;
@@ -144,7 +143,6 @@ a.fas:hover /* lien survolé */
 {
    text-decoration: underline;
    color: #0065FC;
-   transition: 0.5s;
 }
 
 /* Mise en forme des icones et boutons du filtre */
