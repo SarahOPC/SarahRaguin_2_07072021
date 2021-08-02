@@ -6,7 +6,7 @@ nav/*séparation du logo et du menu de navigation*/
     font-family: "Raleway", Arial, Verdana, sans-serif;
     display: flex;
     color: #0065FC;
-    padding-top: 1em;
+    align-items: baseline;
 }
 
 nav ul /*Mise en forme du menu de navigation*/
@@ -32,8 +32,16 @@ nav p /* mise en gras du bouton inscrire*/
 nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
 {
     color:#0065FC;
-    border: solid 0.2em transparent;
     border-top-color: #0065FC;
+}
+
+nav ul>li
+{
+    border: solid 0.2em transparent;
+    padding-top: 3em;
+    border-top-color: #FFFFFF;
+    color: #000000;
+    padding-left: 2.5em;
 }
 
 .research, h1, .filters, header h2
@@ -244,6 +252,7 @@ a.fas:hover /* lien survolé */
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     color: #000000;
+    font-size: 1.2em;
 }
 
 a:link
@@ -314,6 +323,16 @@ a:link
     display: none;
 }
 
+.container-accomodation .item-pop .thumbnails:nth-child(odd) p:nth-child(even)
+{
+    font-size: 1em;
+}
+
+.container-accomodation .item-pop .thumbnails:nth-child(odd) p:nth-child(odd)
+{
+    font-size: 1.1em;
+}
+
 /* Fin Mise en forme de la partie populaire*/
 
 
@@ -340,7 +359,7 @@ a:link
 {
     display: flex;
     flex-direction: column;
-    min-width: fit-content;
+    min-width: 9em;
 }
 
 .item-pop .thumbnails .caption .star
@@ -352,6 +371,7 @@ a:link
 {
     font-weight: bold;
 }
+
 /* Fin vignettes contenants les photos */
 
 /* Fin Mise en forme du container 1 - Hébergement et populaire */
@@ -435,6 +455,12 @@ footer
 .container-footer p
 {
     line-height: 1.5em;
+}
+
+.container-footer a
+{
+    text-decoration: none;
+    color: #000000;
 }
 
 .first-item
@@ -901,6 +927,11 @@ footer
 /* Media Queries - Grands écrans - > 1200 px */
 
 @media all and (min-width: 1200px) {
+
+    header, section, .container-footer, .container-activities h3, #show-more, nav>img
+    {
+        font-size: 1.5em;
+    }
     
     .container-accomodation .item-left-item-up img, .container-accomodation .item-left-item-down img
     {
@@ -909,7 +940,7 @@ footer
 
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
-        width: 15em;
+        width: 22em;
         height: 13em;
     }
 
@@ -922,12 +953,22 @@ footer
     .container-accomodation .item-pop .thumbnails
     {
         height: 9em;
-        width: 9em;
+        width: 15em;
+    }
+
+    .container-accomodation .item-pop .thumbnails p:nth-child(even)
+    {
+        font-size: 1.1em;
     }
 
     .container-activities
     {
         margin-left: 1.5em;
+    }
+
+    .container-activities p
+    {
+        font-size: 1.3em;
     }
   }
 
