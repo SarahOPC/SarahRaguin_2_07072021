@@ -398,13 +398,13 @@ a:link
 
 .container-activities .thumbnails
 {
-    height: 24em;
+    height: 19em;
     box-shadow: 0.1em 0.3em 0.3em #6d6d6d;
 }
 
 .container-activities .item-big .thumbnails
 {
-    height: 52em;
+    height: 42em;
 }
 
 .container-activities .item-big .thumbnails img
