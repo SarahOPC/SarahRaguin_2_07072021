@@ -509,7 +509,7 @@ footer
     
     nav ul
     {
-        position: relative;
+        position: absolute;
         top: 4em;
         margin-bottom: 3em;
         width: 100%;
@@ -518,12 +518,14 @@ footer
         padding-bottom: 1em;
         margin-left: 0em;
         align-items: baseline;
+        padding-inline-start: 0em;
     }
 
     nav ul>li /* li dont le parent est ul */
     {
         width: 50%;
         font-size: 1.2em;
+        margin-left: -1em;
     }
 
     nav
@@ -538,19 +540,22 @@ footer
         margin-top: 1em;
         position: absolute;
         margin-left: 1em;
+        left: 0;
+        top: 0;
     }
 
     nav p
     {
         position: absolute;
         right: 0;
-        margin-top: 1.9em;
+        margin-top: 1.6em;
         margin-right: 1em;
+        font-size: 1.2em;
     }
     
     header h1
     {
-        margin-top: 2em;
+        margin-top: 9em;
         font-size: 3.7em;
         text-align: center;
         margin-bottom: 1em;
@@ -653,7 +658,7 @@ footer
     {
         height: 19em;
         width: 19em;
-        padding-right: 31em;
+        padding-right: 35em;
     }
     
     .container-accomodation .item-pop .thumbnails p
@@ -671,13 +676,13 @@ footer
         
     .caption
     {
-        font-size: 1.8em;
+        font-size: 2em;
         padding-left: 1.5em;
         min-width: max-content;
 
     }
 
-    .container-accomodation .item-pop .thumbnails:nth-child(even) .caption p:nth-child(even)
+    .container-accomodation .item-pop .thumbnails:nth-child(odd) p:nth-child(odd), .container-accomodation .item-pop .thumbnails:nth-child(odd) p:nth-child(even)
     {
         font-size: 1.3em;
     }
@@ -712,6 +717,7 @@ footer
     {
         height: fit-content;
         width: 100%;
+        margin-left: 0em;
     }
 
     .container-accomodation .item-left p, .container-accomodation .item-left .star
@@ -751,7 +757,7 @@ footer
 
     #show-more
     {
-        font-size: 2.7em;
+        font-size: 2.9em;
     }
 
     .container-activities h3
@@ -782,7 +788,17 @@ footer
     {
         flex-direction: column;
     }
+
+    .container-activities .item-big, .container-activities .item-small
+    {
+        width: 90%;
+    }
     
+    .container-activities .item-big .thumbnails img
+    {
+        height: 65%;
+    }
+
     .container-footer
     {
         font-size: 2.5em;
@@ -824,6 +840,11 @@ footer
         margin-left: 1em;
     }
 
+    header h1
+    {
+        margin-top: 2em;
+    }
+
     header h2
     {
         font-size: 1.2em;
@@ -838,7 +859,7 @@ footer
     
     .filters
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .filters+div
@@ -868,6 +889,11 @@ footer
     .popular
     {
         display: none;
+    }
+
+    .container-accomodation .item-pop .thumbnails:nth-child(odd) .caption .star
+    {
+        margin-top: 0.1em;
     }
 
     .container-accomodation .item-pop
@@ -902,6 +928,7 @@ footer
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
         width: 17em;
+        padding-bottom: 5em;
     }
 
     #show-more
@@ -912,6 +939,22 @@ footer
     .container-activities h3
     {
         font-size: 1.5em;
+    }
+
+    .container-activities .item-big .thumbnails
+    {
+        height: 27em;
+    }
+
+    .container-activities .item-big .thumbnails p, .container-activities .item-small .thumbnails p
+    {
+        font-size: 1.2em;
+        margin-top: 0.5em;
+    }
+
+    .container-activities .item-small .thumbnails
+    {
+        height: 11.5em;
     }
 
     .container-footer
