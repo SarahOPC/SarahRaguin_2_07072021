@@ -33,6 +33,7 @@ nav a /*espacement menu de navigation*/
 nav p /* mise en gras du bouton inscrire*/
 {
     font-weight: bold;
+    padding-left: 1.5em;
 }
 
 nav p a
@@ -50,9 +51,9 @@ nav ul>li
 {
     border: solid 0.2em transparent;
     padding-top: 3em;
-    border-top-color: #FFFFFF;
+    border-top-color:#FFFFFF;
     color: #000000;
-    padding-left: 2.5em;
+    padding-left: 3.5em;
 }
 
 .research, h1, .filters, header h2
