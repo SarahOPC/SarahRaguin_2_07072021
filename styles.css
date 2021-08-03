@@ -286,7 +286,6 @@ a:link
     padding-top: 3em;
     padding-right: 1.5em;
     padding-left: 1.5em;
-    margin-right: 2em;
 }
 
 .show /* Espace sous Afficher plus */
@@ -299,6 +298,7 @@ a:link
     margin-left: 1em;
     margin-top: 2em;
     font-weight: bold;
+    color: #000000;
 }
 
 .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
@@ -712,6 +712,7 @@ footer
         align-items: center;
         background-color: #f2f2f2;
         border-radius: 1em 1em 0em 0em;
+        margin-right: 0.5em;
     }
 
     .popular1 h2
@@ -768,7 +769,9 @@ footer
 
     #show-more
     {
-        font-size: 2.9em;
+        font-size: 2em;
+        font-weight: bold;
+        color: #000000;
     }
 
     .container-activities h3
@@ -814,6 +817,8 @@ footer
     {
         font-size: 2.5em;
         flex-direction: column;
+        margin-left: -0.7em;
+        padding-right: 1.2em;
     }
     
     .container-footer p
@@ -912,6 +917,11 @@ footer
         display: none;
     }
 
+    .container-accomodation
+    {
+        margin-right: 0em;
+    }
+
     .container-accomodation .item-pop .thumbnails:nth-child(odd) .caption .star
     {
         margin-top: 0.1em;
@@ -992,9 +1002,22 @@ footer
 
 @media all and (min-width: 1200px) {
 
-    header, section, .container-footer, .container-activities h3, #show-more, nav>img
+    header, section, .container-footer, .container-activities h3, nav>img
     {
         font-size: 1.5em;
+    }
+
+    #show-more
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .container-accomodation .item-left
+    {
+        padding-right: 1.5em;
+        margin-right: 2.5em;
     }
     
     .container-accomodation .item-left-item-up img, .container-accomodation .item-left-item-down img
@@ -1004,8 +1027,13 @@ footer
 
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
-        width: 32em;
+        width: 23em;
         height: 13em;
+    }
+
+    .container-accomodation .item-pop
+    {
+        margin-right: 1.5em;
     }
 
     .container-accomodation .item-pop img
@@ -1017,7 +1045,7 @@ footer
     .container-accomodation .item-pop .thumbnails
     {
         height: 9em;
-        width: 25em;
+        width: 17em;
         margin-left: 2.5em;
         padding-right: 12em;
     }
