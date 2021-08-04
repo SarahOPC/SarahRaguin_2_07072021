@@ -1004,7 +1004,7 @@ footer
 
 @media all and (min-width: 1200px) {
 
-    header, section, .container-footer, .container-activities h3, nav>img
+    header, section, .container-activities h3, nav>img
     {
         font-size: 1.5em;
     }
