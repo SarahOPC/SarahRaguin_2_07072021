@@ -217,7 +217,7 @@ a.fas:hover /* lien survolé */
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 1em;
-    border: 0.1em solid #FFFFFF;
+    border: 0.1em solid #fffff1;
     background-color: #FFFFFF;
     border-radius: 1em;
     padding: 0.3em 0.3em 2.5em 0.3em;
@@ -555,12 +555,14 @@ footer
     {
         width: 19%;
         height: 5%;
-        margin-top: 1.5em;
+        min-width: 20%;
+        min-height: 10%;
         align-self: baseline;
         position: absolute;
         margin-left: 1em;
         left: 0;
         top: 0;
+        z-index: 1;
     }
 
     nav p
@@ -1012,7 +1014,7 @@ footer
 
     .container-activities .item-big .thumbnails
     {
-        height: 27em;
+        height: 87%;
     }
 
     .container-activities .item-big .thumbnails p, .container-activities .item-small .thumbnails p
