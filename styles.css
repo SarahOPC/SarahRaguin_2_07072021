@@ -1073,7 +1073,7 @@ footer
 
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
-        padding-bottom: 30%;
+        padding-bottom: 35%;
     }
 
     .container-accomodation .item-pop
@@ -1089,10 +1089,14 @@ footer
 
     .container-accomodation .item-pop .thumbnails
     {
-        height: 9em;
-        width: 17em;
+        width: 43%;
         margin-left: 2.5em;
         padding-right: 12em;
+    }
+
+    .container-accomodation .item-pop a
+    {
+        display: flex;
     }
 
     .container-accomodation .item-pop .thumbnails .caption
@@ -1100,9 +1104,14 @@ footer
         margin-left: 1.5em;
     }
 
-    .container-accomodation .item-pop .thumbnails p:nth-child(even)
+    .container-accomodation .item-pop .thumbnails p
     {
         font-size: 1.1em;
+    }
+
+    .item-pop .thumbnails .caption .star
+    {
+        margin-top: 0.5em;
     }
 
     .container-activities
