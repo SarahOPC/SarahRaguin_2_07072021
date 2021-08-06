@@ -705,7 +705,6 @@ footer
     {
         font-size: 2em;
         padding-left: 1.5em;
-        min-width: max-content;
 
     }
 
@@ -954,7 +953,6 @@ footer
     {
         background-color: #FFFFFF;
         display: inline-block;
-        width: 100%;
         justify-content: space-around;
     }
 
