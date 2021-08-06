@@ -967,14 +967,12 @@ footer
     .container-accomodation .item-pop a
     {
         display: flex;
-        width: 30%;
     }
     .container-accomodation .item-pop .thumbnails
     {
         height: 100%;
         width: 30%;
         display: inline-block;
-        padding-right: 0%;
     }
 
     .container-accomodation .item-pop .thumbnails:nth-child(odd) .caption p:nth-child(even)
