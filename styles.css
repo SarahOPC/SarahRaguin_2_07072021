@@ -677,7 +677,7 @@ footer
 
     .container-accomodation .item-pop a
     {
-        height: 30%;
+        height: 100%;
         display: contents;
     }
 
@@ -968,7 +968,6 @@ footer
     }
     .container-accomodation .item-pop .thumbnails
     {
-        height: 100%;
         width: 30%;
         display: inline-block;
     }
