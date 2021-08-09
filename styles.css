@@ -276,14 +276,15 @@
         margin-top: 1%;
         margin-bottom: 1%;
         color: #000000;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .container-accomodation .item-left .thumbnails p:nth-child(3)
     {
         font-size: 0.9em;
         margin-top: 3%;
-        margin-bottom: 7%;
+        position: absolute;
+        top: 75%;
     }
 
     a:link
@@ -344,7 +345,16 @@
     .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
     {
         width: 90%;
-        padding-bottom: 35%;
+        height: 8em;
+        padding-bottom: 8em;
+        position: relative;
+    }
+
+    .container-accomodation .item-left-item-up .thumbnails .star, .container-accomodation .item-left-item-down .thumbnails .star
+    {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 1%;
     }
 
 /* Fin de la mise en forme de la partie hébergement */
@@ -379,13 +389,26 @@
     {
         font-size: 0.9em;
         margin-top: 15%;
-        margin-bottom: 55%;
+        position: absolute;
+        top: 1%;
     }
 
     .container-accomodation .item-pop img
     {
         height: auto;
         object-fit: cover;
+    }
+
+    .container-accomodation .item-pop .thumbnails
+    {
+        position: relative;
+    }
+
+    .container-accomodation .item-pop .thumbnails .star
+    {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 1%;
     }
 
 /* Fin Mise en forme de la partie populaire*/
@@ -395,7 +418,7 @@
 
     .container-accomodation .item-pop .thumbnails
     {
-        height: 21%;
+        height: 11em;
         display: flex;
         padding: 0.3em;
         margin-bottom: 2em;
@@ -418,6 +441,7 @@
     .container-accomodation .item-left .title-p, .container-accomodation .item-pop .title-p
     {
         font-weight: bold;
+        position: relative;
     }
 
 /* Fin vignettes contenants les photos */
@@ -526,6 +550,7 @@
 
 /* Media Queries - Téléphone - < ou = 991 px */
 
+/*-------------------------------------------------------------------------------------------------to delete
 @media all and (max-width: 991px) {
 
     body
@@ -536,6 +561,9 @@
     }
     
     nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
+
+    /*-------------------------------------------------------------------------------------------------to delete
+
     {
         color:#0065FC;
         border: solid 0.2em transparent;
@@ -564,6 +592,9 @@
     }
 
     nav ul>li /* li dont le parent est ul */
+
+    /*-------------------------------------------------------------------------------------------------to delete
+
     {
         width: 50%;
         font-size: 1.2em;
@@ -655,6 +686,9 @@
     }
 
     .filters+div /* div juste après .filters*/
+
+    /*-------------------------------------------------------------------------------------------------to delete
+
     {
         display: flex;
         align-items: baseline;
@@ -881,6 +915,7 @@
         width: max-content;
     }
   }
+/*-------------------------------------------------------------------------------------------------to delete - fin */
 
 /*######################################################################################################################*/
 
