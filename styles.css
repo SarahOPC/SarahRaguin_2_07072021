@@ -925,12 +925,6 @@
 
   @media all and (max-width: 1199px) and (orientation: landscape) {
 
-
-    body
-    {
-        background-color: yellow;
-    }
-
     nav
     {
         font-size: 1.1em;
@@ -1007,8 +1001,6 @@
     .container-accomodation
     {
         flex-direction: column-reverse;
-        width: 100%;
-        margin-left: 2.5em;
     }
 
     .popular1
@@ -1031,70 +1023,24 @@
 
     .container-accomodation
     {
-        margin-right: 0em;
-    }
-
-    .container-accomodation .item-pop .thumbnails:nth-child(odd) .caption .star
-    {
-        margin-top: 0.1em;
+        margin-top: 0%;
     }
 
     .container-accomodation .item-pop
     {
-        background-color: #FFFFFF;
+        background-color: transparent;
         display: flex;
-        justify-content: space-around;
+        padding-left: 1%;
     }
 
-    .container-accomodation .item-pop img
-    {
-        height: auto;
-        object-fit: cover;
-    }
-
-    .container-accomodation .item-pop a
-    {
-        display: flex;
-    }
     .container-accomodation .item-pop .thumbnails
     {
-        width: 30%;
-        display: flex;
-    }
-
-    .container-accomodation .item-pop .thumbnails:nth-child(odd) .caption p:nth-child(even)
-    {
-        font-size: 1.1em;
+        padding-right: 9em;
     }
 
     .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
     {
         justify-content: space-evenly;
-    }
-
-    .container-accomodation .item-left-item-up a, .container-accomodation .item-left-item-down a
-    {
-        width: 33%;
-    }
-
-    .container-accomodation .item-left-item-up .thumbnails, .container-accomodation .item-left-item-down .thumbnails
-    {
-        padding-bottom: 25%;
-    }
-
-    #show-more
-    {
-        font-size: 1.2em;
-    }
-
-    .container-activities
-    {
-        margin-left: 5em;
-    }
-
-    .container-activities h3
-    {
-        font-size: 1.5em;
     }
 
     .container-activities .item-big .thumbnails
@@ -1104,8 +1050,8 @@
 
     .container-activities .item-big .thumbnails p, .container-activities .item-small .thumbnails p
     {
-        font-size: 1.2em;
         margin-top: 0.5em;
+        font-size: 1.1em;
     }
 
     .container-activities .item-small .thumbnails
@@ -1115,8 +1061,8 @@
 
     .container-footer
     {
+        min-height: 17.5em;
         background-color: #FFFFFF;
-        text-align: center;
     }
   }
 
