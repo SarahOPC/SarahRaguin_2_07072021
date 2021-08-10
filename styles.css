@@ -560,8 +560,6 @@
     }
     
     nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
-
-
     {
         color:#0065FC;
         border: solid 0.2em transparent;
@@ -569,7 +567,40 @@
         padding-bottom: 1em;
         border-top-color: #FFFFFF;
     }
-    
+
+/*-------------------------------------------------------------------------à tester
+
+    nav
+    {
+        width:100%;
+        position: relative;
+    }
+
+    nav img
+    {
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+    }
+
+    nav ul p
+    {
+        position:absolute;
+        top:20%;
+        left: 70%;
+        font-size: 2em;
+    }
+
+    nav ul li
+    {
+        position: absol
+    }
+
+/*-------------------------------------------------------------------------à tester - fin
+
+
+    /*----------------------------------------------------------------------------------------essai
     nav ul>li a
     {
         margin: 0 auto;
@@ -585,7 +616,7 @@
 
     nav ul>li /* li dont le parent est ul */
 
-
+    /*----------------------------------------------------------------------------------------essai
     {
         width: 50%;
         font-size: 1.2em;
@@ -619,6 +650,9 @@
         font-size: 1.2em;
     }
     
+    /*----------------------------------------------------------------------------------------essai*/
+
+
     header h1
     {
         margin-top: 11em;
