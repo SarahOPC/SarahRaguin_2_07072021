@@ -551,19 +551,16 @@
 
 /* Media Queries - Téléphone - < ou = 991 px */
 
-/*-------------------------------------------------------------------------------------------------to delete
 @media all and (max-width: 991px) {
 
     body
     {
-        margin-left: 1.5em;
         width: 100%;
-        background-color: green;
+        background-color: yellow;
     }
     
     nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
 
-    /*-------------------------------------------------------------------------------------------------to delete
 
     {
         color:#0065FC;
@@ -582,19 +579,12 @@
     {
         position: absolute;
         top: 4em;
-        margin-bottom: 3em;
-        width: 100%;
         border: solid 0.2em transparent;
         border-bottom-color: #f2f2f2;
-        padding-bottom: 1em;
-        margin-left: 0em;
-        align-items: baseline;
-        padding-inline-start: 0em;
     }
 
     nav ul>li /* li dont le parent est ul */
 
-    /*-------------------------------------------------------------------------------------------------to delete
 
     {
         width: 50%;
@@ -631,8 +621,8 @@
     
     header h1
     {
-        margin-top: 9em;
-        font-size: 3.7em;
+        margin-top: 11em;
+        font-size: 2.7em;
         text-align: center;
         margin-bottom: 1em;
     }
@@ -640,13 +630,12 @@
     header h2
     {
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1em;
     }
 
     .research
     {
-        font-size: 2.6em;
-        margin-top: 3.5em;
+        font-size: 2em;
         text-align: center;
     }
 
@@ -655,18 +644,18 @@
         display: none;
     }
 
-    input
-    {
-        margin-left: 1em;
-    }
-
     .search-cell
     {
         display: inline-flex;
         background-color: #0065FC;
         color: #FFFFFF;
-        padding: 0.5em 0.5em 0.5em 0.5em;
-        border-radius: 0em 0.5em 0.5em 0em;
+        padding: 0.7em;
+        border-radius: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    a.btn.marker
+    {
+        padding: 0.65em;
     }
 
     .filters
@@ -678,18 +667,16 @@
     {
         margin-left: 1.5em;
         margin-bottom: 1em;
-        font-size: 3em;
+        font-size: 2em;
     }
 
-    .filters>a.fas
+    a.fasbis
     {
-        font-size: 3em;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
 
     .filters+div /* div juste après .filters*/
-
-    /*-------------------------------------------------------------------------------------------------to delete
-
     {
         display: flex;
         align-items: baseline;
@@ -702,13 +689,13 @@
 
     h4
     {
-        font-size: 2.9em;
+        font-size: 2em;
     }
     
     .thumbnails
     {
         border: 0.5em solid #FFFFFF;
-        border-radius: 5em;
+        border-radius: 2.5em;
     }
     
     .container-accomodation
@@ -716,89 +703,74 @@
         flex-direction: column-reverse;
         margin-left: 1em;
     }
-
-    .container-accomodation h2
-    {
-        font-size: 4em;
-    }
-
-    .container-accomodation .item-pop .thumbnails .caption .star
-    {
-        margin-top: 3.7em;
-    }
     
     .container-accomodation .item-pop img
     {
-        height: auto;
+        width: 110%;
         object-fit: cover;
-        border-radius : 5em 0em 0em 5em;
+        border-radius : 2.5em 0em 0em 2.5em;
     }
-
-    .container-accomodation .item-pop a
+    
+    .container-accomodation .item-pop .title-p
     {
-        height: 100%;
-        display: flex;
+        font-size: 1.1em;
+        width: 110%;
     }
 
     .container-accomodation .item-pop .thumbnails
     {
-        height: 19em;
-        width: 30%;
-        padding-right: 63%;
+        height: 23em;
+        padding-right: 60%;
     }
     
     .container-accomodation .item-pop
     {
+        width: 109%;
         border-radius: 0em 0em 0em 0em;
         background-color: #f2f2f2;
         margin-block: -2em;
-        margin-right: 1.5em;
     }
-        
+    
     .caption
     {
         font-size: 2em;
-        padding-left: 1.5em;
-
+        padding-left: 0.9em;
+        
     }
-
-    .container-accomodation .item-pop .thumbnails:nth-child(odd) p:nth-child(odd), .container-accomodation .item-pop .thumbnails:nth-child(odd) p:nth-child(even)
-    {
-        font-size: 1.3em;
-    }
-
-    .container-accomodation .item-pop .thumbnails:nth-child(odd) .star
-    {
-        margin-top: 2em;
-    }
-
+    
     .popular1
     {
         display: flex;
-        font-size: 3em;
+        font-size: 2.5em;
         margin-top: 2em;
         justify-content: space-evenly;
         align-items: center;
         background-color: #f2f2f2;
         border-radius: 1em 1em 0em 0em;
-        margin-right: 0.5em;
-        margin-left: 0.3em;
+        margin-left: 0.4em;
+        width: 112%;
     }
-
-    .popular1 h2
-    {
-        margin-right: 2.5em;
-    }
-
+    
     .popular
     {
         display: none;
+    }
+    
+    .container-accomodation h2
+    {
+        font-size: 3.5em;
+        margin-top: 2em;
+    }
+
+    .container-accomodation .item-left-item-up, .container-accomodation .item-left-item-down
+    {
+        display: block;
     }
 
     .container-accomodation .item-left .thumbnails
     {
         height: fit-content;
-        width: 100%;
+        width: 115%;
         margin-left: 0em;
     }
 
@@ -816,25 +788,25 @@
     {
         flex-direction: column;
     }
-    .container-accomodation .item-left .thumbnails .title-p
+    .container-accomodation .item-left-item-up .thumbnails .title-p, .container-accomodation .item-left-item-down .thumbnails .title-p
     {
-        font-size: 3.5em;
+        font-size: 2.1em;
     }
 
-    .container-accomodation .item-left .thumbnails p
+    .container-accomodation .item-left-item-up .thumbnails p:nth-child(3), .container-accomodation .item-left-item-down .thumbnails p:nth-child(3)
     {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .container-accomodation .item-left .thumbnails .star
     {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .container-accomodation .item-left img
     {
         height: 20em;
-        border-radius: 5em 5em 0em 0em;
+        border-radius: 2.5em 2.5em 0em 0em;
     }
 
     .container-accomodation .item-left-item-down a, .container-accomodation .item-left-item-up a
@@ -845,30 +817,29 @@
     #show-more
     {
         font-size: 2em;
-        font-weight: bold;
-        color: #000000;
     }
 
     .container-activities h3
     {
-        font-size: 4em;
+        font-size: 3.5em;
     }
-    .container-activities .thumbnails
+    .container-activities .item-big .thumbnails, .container-activities .item-small .thumbnails
     {
-        width: 100%;
+        width: 115%;
         height: 35em;
         padding-bottom: 0em;
+        margin-bottom: 3em;
     }
 
     .container-activities img
     {
         height: 20em;
-        border-radius: 5em 5em 0em 0em;
+        border-radius: 2.5em 2.5em 0em 0em;
     }
 
     .container-activities p
     {
-        font-size: 3em;
+        font-size: 2.5em;
         padding-top: 0.5em;
         margin-left: 1.1em;
     }
@@ -883,7 +854,7 @@
         width: 90%;
     }
     
-    .container-activities .item-big .thumbnails img
+    .container-activities .item-big .thumbnails img, .container-activities .item-small .thumbnails img
     {
         height: 65%;
     }
@@ -895,10 +866,11 @@
 
     .container-footer
     {
-        font-size: 2.5em;
+        font-size: 2em;
         flex-direction: column;
         margin-left: -0.7em;
-        padding-right: 1.2em;
+        padding-right: 5.7em;
+        padding-bottom: 1em;
     }
     
     .container-footer p
@@ -906,24 +878,18 @@
         width: max-content;
     }
     
-    .first-item, .second-item, .third-item
-    {
-        margin-left: 2em;
-    }
-
     .container-footer h3
     {
         width: max-content;
     }
   }
-/*-------------------------------------------------------------------------------------------------to delete - fin */
 
 /*######################################################################################################################*/
 
 /* Media Queries - Tablette - < ou = 1199 px */
 
 
-  @media all and (max-width: 1199px) and (orientation: landscape) {
+  @media all and (min-width:992px) and (max-width: 1199px) and (orientation: landscape) {
 
     nav
     {
