@@ -495,6 +495,7 @@
         position: absolute;
         top: -3em;
         margin-left: 1em;
+        color: #000000;
     }
 
     .container-activities .item-big .thumbnails, .container-activities .item-small .thumbnails
@@ -556,7 +557,6 @@
     body
     {
         width: 100%;
-        background-color: yellow;
     }
     
     nav ul>li:hover, nav ul>li:active, nav ul>li:focus /*mise en forme boutons hébergements et activités au clic*/
@@ -568,94 +568,54 @@
         border-top-color: #FFFFFF;
     }
 
-/*-------------------------------------------------------------------------à tester
+    nav ul p a
+    {
+        margin-right: 0.5em;
+    }
 
+    
     nav
     {
         width:100%;
         position: relative;
     }
-
+    
     nav img
     {
-        position:absolute;
-        top:0;
-        left:0;
         height:100%;
-    }
-
-    nav ul p
-    {
-        position:absolute;
-        top:20%;
-        left: 70%;
-        font-size: 2em;
-    }
-
-    nav ul li
-    {
-        position: absol
-    }
-
-/*-------------------------------------------------------------------------à tester - fin
-
-
-    /*----------------------------------------------------------------------------------------essai
-    nav ul>li a
-    {
-        margin: 0 auto;
+        width:100%;
     }
     
+    
+    nav ul li a
+    {
+        margin-right: 1em;
+        font-size: 2.5em;
+    }
+
     nav ul
     {
         position: absolute;
-        top: 4em;
-        border: solid 0.2em transparent;
-        border-bottom-color: #f2f2f2;
-    }
-
-    nav ul>li /* li dont le parent est ul */
-
-    /*----------------------------------------------------------------------------------------essai
-    {
-        width: 50%;
-        font-size: 1.2em;
-        margin-left: -1em;
-    }
-
-    nav
-    {
-        font-size: 2.3em;
+        width: 100%;
+        top: 5em;
     }
     
-    nav img
-    {
-        width: 19%;
-        height: 5%;
-        min-width: 20%;
-        min-height: 10%;
-        align-self: baseline;
-        position: absolute;
-        margin-left: 1em;
-        left: 0;
-        top: 0;
-        z-index: 1;
-    }
-
     nav p
     {
-        position: absolute;
+        position:absolute;
+        top: 0;
         right: 0;
-        margin-top: 1.6em;
-        font-size: 1.2em;
+        font-size: 2.3em;
     }
-    
-    /*----------------------------------------------------------------------------------------essai*/
 
+    nav p a
+    {
+        margin-right: 0em;
+    }
 
     header h1
     {
-        margin-top: 11em;
+        margin-top: 4em;
         font-size: 2.7em;
         text-align: center;
         margin-bottom: 1em;
@@ -719,6 +679,7 @@
     .fa-info-circle::before
     {
         font-size: 3em;
+        margin-right: 0.5em;
     }
 
     h4
@@ -759,7 +720,7 @@
     
     .container-accomodation .item-pop
     {
-        width: 109%;
+        width: 95%;
         border-radius: 0em 0em 0em 0em;
         background-color: #f2f2f2;
         margin-block: -2em;
@@ -782,7 +743,7 @@
         background-color: #f2f2f2;
         border-radius: 1em 1em 0em 0em;
         margin-left: 0.4em;
-        width: 112%;
+        width: 98.5%;
     }
     
     .popular
@@ -804,7 +765,7 @@
     .container-accomodation .item-left .thumbnails
     {
         height: fit-content;
-        width: 115%;
+        width: 98%;
         margin-left: 0em;
     }
 
@@ -859,10 +820,11 @@
     }
     .container-activities .item-big .thumbnails, .container-activities .item-small .thumbnails
     {
-        width: 115%;
+        width: 100%;
         height: 35em;
         padding-bottom: 0em;
         margin-bottom: 3em;
+        margin-left: 2em;
     }
 
     .container-activities img
@@ -893,17 +855,12 @@
         height: 65%;
     }
 
-    .container-activities .item-big .thumbnails, .container-activities .item-small .thumbnails
-    {
-        margin-left: 2em;
-    }
-
     .container-footer
     {
         font-size: 2em;
         flex-direction: column;
         margin-left: -0.7em;
-        padding-right: 5.7em;
+        padding-right: 2em;
         padding-bottom: 1em;
     }
     
@@ -954,6 +911,13 @@
         border-bottom-color: #0065FC;
         border-top-color: transparent;
         padding-bottom: 1em;
+    }
+
+    nav p
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     header h1
