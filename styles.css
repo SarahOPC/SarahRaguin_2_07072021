@@ -20,7 +20,7 @@
         font-family: "Raleway", Arial, Verdana, sans-serif;
         display: flex;
         color: #0065FC;
-        align-items: center;
+        align-items: flex-end;
         font-size: 0.7em;
     }
 
@@ -65,6 +65,7 @@
 
     nav ul>li
     {
+        padding-top: 2em;
         border: 0.1em solid transparent;
         border-top-color: transparent;
         color: #000000;
