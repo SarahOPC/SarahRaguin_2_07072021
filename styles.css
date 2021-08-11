@@ -463,7 +463,7 @@
         margin-left: 1.5em;
     }
     
-    .container + div
+    .container-activities div
     {
         display: flex;
 
