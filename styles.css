@@ -10,7 +10,7 @@
 
     header, section, .container-activities h3, nav>img
     {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
 /*######################################################################################################################*/
@@ -74,12 +74,12 @@
 
     header h1
     {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     header h2
     {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     a.fas
@@ -102,7 +102,7 @@
     {
         background-color: #f2f2f2;
         color: #000000;
-        padding: 0.7em 0.8em;
+        padding: 0.5em 0.7em;
         border-radius: 0.5em 0em 0em 0.5em;
     }
 
@@ -115,7 +115,7 @@
         border-bottom-color: #f2f2f2;
         border-right-color: #FFFFFF;
         border-left-color: #FFFFFF;
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: bold;
     }
 
@@ -124,7 +124,7 @@
         background-color: #0065FC;
         color: #FFFFFF;
         border-radius: 0em 0.5em 0.5em 0em;
-        padding: 0.7em 0.8em;
+        padding: 0.5em 0.8em;
         font-weight: bold;
     }
 
