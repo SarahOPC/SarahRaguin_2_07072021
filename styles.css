@@ -436,6 +436,7 @@
         border-radius: 1em 0em 0em 1em;
         margin-right: 1em;
         width: 75%;
+        flex-shrink: 0;
     }
 
     .caption
